@@ -1,0 +1,33 @@
+html,body
+{
+    height:100%;
+    width:100%;
+    margin:0;
+}
+
+
+.mixlr-body
+{
+    display:-webkit-flex;
+    display:flex;
+    -webkit-flex-direction:column;
+    flex-direction:column;
+    -webkit-justify-content:center;
+    justify-content:center;
+    -webkit-align-items:center;
+    align-items:center;
+    background-color:hsla(217, 75%, 15%, 0.93);
+    height:100%;
+    width:100%;
+}
+
+.mixlr-in
+{
+    height:90%;
+    width:90%;
+}
+
+#mixlr
+{
+    height:90%;
+}

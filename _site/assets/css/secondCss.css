@@ -1,0 +1,107 @@
+html, body
+{
+    height:100%;
+}
+
+.site-wrapper
+{
+    display:-webkit-flex;
+    display:flex;
+    -webkit-flex-direction:column;
+    flex-direction:column;
+    -webkit-justify-content:center;
+    justify-content:center;
+    -webkit-align-items:center;
+    align-items:center;
+    background-color:hsla(217, 75%, 15%, 0.93);
+    height:100%;
+    width:100%;
+}
+
+.logo
+{
+    opacity:0;
+    margin:2em;
+}
+
+
+/*banner*/
+.banner
+{
+    display:inline-block;
+    width:100%;
+    flex-basis:auto;
+
+}
+
+.banner p
+{
+    opacity:0;
+    text-align:center;
+    color:hsla(51, 15%, 95%, 0.82);
+    margin:.14em;
+}
+
+#iglesia
+{
+
+    font-family:'Mate SC', serif;
+    font-size:1em;
+    letter-spacing:.5em;
+}
+
+#columna
+{
+
+    font-family:'Mate SC', serif;
+    font-size:1.1em;
+    letter-spacing:.4em;
+}
+
+#luz
+{
+    font-family:'Rosario', sans-serif;
+    font-size:2.5em;
+    letter-spacing:.2em;
+    font-weight:bold;
+    color:hsla(51, 15%, 95%, 0.92);
+}
+
+#state
+{
+    font-family:'Carme',sans-serif;
+    font-size:1.3em;
+    letter-spacing:.7em;
+}
+
+@media screen and (max-width:500px),screen and (max-height:500px)
+{
+    #iglesia
+    {
+        font-size:1.15em;
+        letter-spacing:.25em;
+    }
+    #columna
+    {
+        font-size:.8em;
+        letter-spacing:.25em;
+    }
+    #luz
+    {
+        font-size:1.5em;
+    }
+    #state
+    {
+        font-size:1.3em;
+        margin:.5em;
+    }
+}
+
+
+/*about link*/
+
+.media
+{
+    opacity:0;
+    margin:5em;
+}
