@@ -35,17 +35,18 @@ body
     background-color:hsla(223, 27%, 16%, .6);
     border:.7em solid #1c2c54;
     padding:2em;
+    opacity:0;
+}
+
+.symb
+{
+    opacity:0;
 }
 
 .logo p
 {
     color:hsla(51, 15%, 95%, 0.92);
     margin:0;
-}
-
-.logo img
-{
-    margin:2em;
 }
 
 #iglesia
@@ -114,6 +115,7 @@ body
 {
     display:-webkit-flex;
     display:flex;
+    opacity:0;
     width:100%;
     -webkit-flex-flow:row wrap;
     flex-flow:row wrap;
