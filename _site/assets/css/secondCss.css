@@ -3,6 +3,8 @@ html, body
     height:100%;
 }
 
+body
+
 .site-wrapper
 {
     display:-webkit-flex;
@@ -13,33 +15,37 @@ html, body
     justify-content:center;
     -webkit-align-items:center;
     align-items:center;
-    background-color:hsla(217, 75%, 15%, 0.93);
+    background-color:hsla(223, 46%, 23%, 1);
     height:100%;
     width:100%;
 }
 
+/*logo*/
 .logo
 {
-    opacity:0;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-flex-direction:column;
+    flex-direction:column;
+    -webkit-justify-content:center;
+    justify-content:center;
+    -webkit-align-items:center;
+    align-items:center;
+    margin:3em;
+    background-color:hsla(223, 27%, 16%, .6);
+    border:.7em solid #1c2c54;
+    padding:2em;
+}
+
+.logo p
+{
+    color:hsla(51, 15%, 95%, 0.92);
+    margin:0;
+}
+
+.logo img
+{
     margin:2em;
-}
-
-
-/*banner*/
-.banner
-{
-    display:inline-block;
-    width:100%;
-    flex-basis:auto;
-
-}
-
-.banner p
-{
-    opacity:0;
-    text-align:center;
-    color:hsla(51, 15%, 95%, 0.82);
-    margin:.14em;
 }
 
 #iglesia
@@ -64,7 +70,7 @@ html, body
     font-size:2.5em;
     letter-spacing:.2em;
     font-weight:bold;
-    color:hsla(51, 15%, 95%, 0.92);
+    color:hsla(51, 15%, 95%, 0.98);
 }
 
 #state
@@ -76,6 +82,12 @@ html, body
 
 @media screen and (max-width:500px),screen and (max-height:500px)
 {
+    .logo
+    {
+        margin:2em;
+        padding:.5em;
+    }
+
     #iglesia
     {
         font-size:1.15em;
@@ -93,15 +105,23 @@ html, body
     #state
     {
         font-size:1.3em;
-        margin:.5em;
     }
 }
 
-
-/*about link*/
+/*bar*/
 
 .media
 {
-    opacity:0;
-    margin:5em;
+    display:-webkit-flex;
+    display:flex;
+    width:100%;
+    -webkit-flex-flow:row wrap;
+    flex-flow:row wrap;
+    -webkit-justify-content:space-around;
+    justify-content:space-around;
+    -webkit-align-items:center;
+    align-items:center;
+    color:#fff;
+    margin:2em;
+    font-size:1.2em;
 }

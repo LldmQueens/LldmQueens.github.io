@@ -22,9 +22,9 @@ $("#state")
 .delay(550)
 .velocity("transition.slideUpIn", 2000);
 
-$(".media")
-.delay(1800)
-.velocity("transition.slideUpIn", 1000);
+// $(".media")
+// .delay(1800)
+// .velocity("transition.slideUpIn", 1000);
 
 $(function(){
 
