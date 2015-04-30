@@ -1,9 +1,13 @@
+*
+{
+    box-sizing:border-box;
+    -webkit-user-select:none;
+}
+
 html, body
 {
     height:100%;
 }
-
-body
 
 .site-wrapper
 {
@@ -11,8 +15,6 @@ body
     display:flex;
     -webkit-flex-direction:column;
     flex-direction:column;
-    -webkit-justify-content:center;
-    justify-content:center;
     -webkit-align-items:center;
     align-items:center;
     background-color:hsla(223, 46%, 23%, 1);
@@ -20,18 +22,15 @@ body
     width:100%;
 }
 
+
 /*logo*/
 .logo
 {
-    display:-webkit-flex;
-    display:flex;
-    -webkit-flex-direction:column;
-    flex-direction:column;
-    -webkit-justify-content:center;
-    justify-content:center;
-    -webkit-align-items:center;
-    align-items:center;
-    margin:3em;
+    width:85%;
+    text-align:center;
+    flex-shrink:0;
+    margin-top:3em;
+    -webkit-font-smoothing:antialiased;
     background-color:hsla(223, 27%, 16%, .6);
     border:.7em solid #1c2c54;
     padding:2em;
@@ -41,10 +40,12 @@ body
 .symb
 {
     opacity:0;
+    flex-shrink:0;
 }
 
 .logo p
 {
+    opacity:0;
     color:hsla(51, 15%, 95%, 0.92);
     margin:0;
 }
@@ -81,41 +82,14 @@ body
     letter-spacing:.7em;
 }
 
-@media screen and (max-width:500px),screen and (max-height:500px)
-{
-    .logo
-    {
-        margin:2em;
-        padding:.5em;
-    }
-
-    #iglesia
-    {
-        font-size:1.15em;
-        letter-spacing:.25em;
-    }
-    #columna
-    {
-        font-size:.8em;
-        letter-spacing:.25em;
-    }
-    #luz
-    {
-        font-size:1.5em;
-    }
-    #state
-    {
-        font-size:1.3em;
-    }
-}
-
 /*bar*/
 
-.media
+.bar
 {
     display:-webkit-flex;
     display:flex;
     opacity:0;
+    height:10%;
     width:100%;
     -webkit-flex-flow:row wrap;
     flex-flow:row wrap;
@@ -123,7 +97,233 @@ body
     justify-content:space-around;
     -webkit-align-items:center;
     align-items:center;
-    color:#fff;
     margin:2em;
+    -webkit-font-smoothing:antialiased;
+    background-color:#fff;
+}
+
+.bar p
+{
+    margin:0;
     font-size:1.2em;
+    color:#000;
+}
+
+/********** flex the box to keep everything in middle*/
+/*.box
+{
+    display:-webkit-flex;
+    display:flex;
+    -webkit-flex-direction:column;
+    flex-direction:column;
+    -webkit-justify-content:center;
+    justify-content:center;
+    -webkit-align-items:center;
+    align-items:center;
+}*/
+
+
+/************************ navbar */
+.nav-bar
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:0;
+    border:0 solid red;
+    background-color:transparent;
+    -webkit-transition:border-width .5s, height 0s .5s;
+    transition:border-width .5s, height 0s .5s;
+}
+
+.nav-trigger
+{
+    position:fixed;
+    bottom:3em;
+    left:42%;
+    width: 52px;
+    height: 52px;
+}
+.nav-trigger span
+{
+    position: absolute;
+    top:50%;
+    left:0;
+    width:100%;
+    height:15%;
+    display:block;
+    margin-top:-2px;
+    font-size:0px;
+    background-color:#fff;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+}
+
+/*lines for trigger button*/
+.nav-trigger span:before,
+.nav-trigger span:after
+{
+    position:absolute;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#fff;
+    content:'';
+    -webkit-transition:transform .5s;
+    transition:transform .5s;
+}
+
+.nav-trigger span:before {
+	-webkit-transform: translateY(-250%);
+    transform: translateY(-250%);
+}
+
+.nav-trigger span:after {
+	-webkit-transform: translateY(250%);
+    transform: translateY(250%);
+}
+
+/*reveals the hidden nav*/
+.nav-bar.nav-bar-open
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border: 5em solid red;
+    background-color:hsla(223, 46%, 23%, .8);
+    transition: border-width .5s, background-color .5s;
+    -webkit-transition: border-width .5s, background-color .5s;
+}
+/*this will be added by js*/
+.nav-bar-overlay
+{
+    position:absolute;
+    width:100%;
+}
+/*when nav is open*/
+.nav-bar.nav-bar-open .nav-overlay
+{
+    height:100%;
+}
+
+.nav-bar.nav-bar-open .nav-trigger span
+{
+    background-color:transparent;
+}
+.nav-bar.nav-bar-open .nav-trigger span:before {
+	transform: translateY(0) rotate(45deg);
+    -webkit-transform: translateY(0) rotate(45deg);
+}
+
+.nav-bar.nav-bar-open .nav-trigger span:after {
+	transform: translateY(0) rotate(-45deg);
+    transform: translateY(0) rotate(-45deg);
+}
+
+.nav-bar ul
+{
+    font-size:2em;
+    font-family:'Rosario', sans-serif;
+    position: fixed;
+    top: 75px;
+    left: 50%;
+    margin-left:-3.5em;
+    padding: 0;
+    width: 6.3em;
+    list-style: none;
+    backface-visibility: hidden;
+}
+
+/* allows menu list to fit in center of ul tag*/
+.nav-bar ul li,
+.nav-bar ul li a
+{
+    width:100%;
+    text-align:center;
+    /*display:block;*/
+}
+/*hide list items until menu is triggered*/
+.nav-bar ul li
+{
+    padding:2em 0;
+    visibility:hidden;
+    opacity:0;
+    /*this controls change when letters leave screen*/
+    transition: transform 1s, opacity .1s, visibility 0s .2s;
+    -webkit-transition: transform 1s, opacity .1s, visibility 0s .2s;
+}
+
+/*this hides the whole list out of window bounds*/
+.nav-bar ul li:first-child {
+	transform: translate3d(320%,0,0);
+    -webkit-transform: translate3d(320%,0,0);
+}
+
+.nav-bar ul li:nth-child(2) {
+	transform: translate3d(300%,0,0);
+    -webkit-transform: translate3d(300%,0,0);
+}
+
+.nav-bar ul li:nth-child(3) {
+	transform: translate3d(320%,0,0);
+    -webkit-transform: translate3d(320%,0,0);
+}
+
+/*reveals whole list of menu items when opened*/
+.nav-bar.nav-bar-open ul li
+{
+    visibility: visible;
+    opacity:1;
+    transition: transform .8s, opacity .8s;
+	transform: translate3d(0,0,0);
+    /*screen entrance*/
+    -webkit-transition: transform .8s, opacity .8s;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+
+
+
+/********************* small screen */
+
+@media screen and (max-width:500px),screen and (max-height:500px)
+{
+    .logo
+    {
+        width:95%;
+        margin:2em 0 2em;
+        padding:0em;
+    }
+
+    .bar
+    {
+        background-color:transparent;
+        width:55px;
+    }
+    .bar p
+    {
+        display:none;
+    }
+
+    #iglesia
+    {
+        font-size:1.18em;
+        letter-spacing:.25em;
+    }
+    #columna
+    {
+        font-size:.9em;
+        letter-spacing:.25em;
+    }
+    #luz
+    {
+        font-size:1.7em;
+    }
+    #state
+    {
+        font-size:1.3em;
+    }
 }
