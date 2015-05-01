@@ -1,6 +1,7 @@
 *
 {
     box-sizing:border-box;
+    -webkit-box-sizing:border-box;
 }
 
 html, body
@@ -208,7 +209,7 @@ html, body
 
 .nav-bar.nav-bar-open .nav-trigger span:after {
 	transform: translateY(0) rotate(-45deg);
-    transform: translateY(0) rotate(-45deg);
+    -webkit-transform: translateY(0) rotate(-45deg);
 }
 
 .nav-bar ul
@@ -266,9 +267,9 @@ html, body
     visibility: visible;
     opacity:1;
     transition: transform .8s, opacity .8s;
+    -webkit-transition: transform .8s, opacity .8s;
 	transform: translate3d(0,0,0);
     /*screen entrance*/
-    -webkit-transition: transform .8s, opacity .8s;
     -webkit-transform: translate3d(0,0,0);
 }
 
