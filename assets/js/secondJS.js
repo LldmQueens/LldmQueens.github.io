@@ -28,7 +28,7 @@ $(".bar")
 .velocity({opacity:1}, 1200);
 
 $(function(){
-    
+
   // nav bar
 
     function init(){
@@ -37,7 +37,7 @@ $(function(){
         var nav = document.getElementById('nav'),
 
         // querySelector returns first match to a.nav-trigger
-        trigger = nav.querySelector('a.nav-trigger'),
+        //trigger = ,//nav.querySelector('a.nav-trigger'),
 
         resetMenu = function(){
             // removes open nav property and adds default
@@ -55,7 +55,8 @@ $(function(){
         overlay.className = 'nav-bar-overlay';
         nav.appendChild(overlay);
 
-        trigger.addEventListener('click', function(ev){
+        // $('.symb').addEventListener('click', function(ev){
+            $('.nav-trigger').click(function(ev){    
             // stopPropagation keeps the click event local
             // doesnt let any other elemnents know
             // this prevents events in  triggers parent element from firing

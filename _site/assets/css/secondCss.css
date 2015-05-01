@@ -125,9 +125,10 @@ html, body
 
 .nav-trigger
 {
+    margin: 0 auto;
     position:fixed;
     bottom:3em;
-    left:42%;
+    left:47%;
     width: 52px;
     height: 52px;
 }
