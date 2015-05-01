@@ -188,6 +188,7 @@ html, body
 {
     position:absolute;
     width:100%;
+    height:0;
 }
 /*when nav is open*/
 .nav-bar.nav-bar-open .nav-overlay
