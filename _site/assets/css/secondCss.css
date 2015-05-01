@@ -11,7 +11,7 @@ html, body
 
 body
 {
-    background-image:url('../img/whirl2.jpg');
+
 }
 
 .site-wrapper
@@ -24,80 +24,89 @@ body
     justify-content:center;
     -webkit-align-items:center;
     align-items:center;
-    border: 4em solid hsla(223, 46%, 23%, .7);
-    background-color:hsla(223, 46%, 23%, .2);
-    height:100%;
-    width:100%;
+    background-color:#fff;
+    /*height:100%;
+    width:100%;*/
 }
 
 
 /*logo*/
 .logo
 {
-    width:85%;
-    text-align:center;
-    flex-shrink:0;
-    margin-top:2em;
-    -webkit-font-smoothing:antialiased;
-    background-color:hsla(223, 27%, 16%, .9);
-    border:.7em solid #1c2c54;
-    padding:1em;
     opacity:0;
+    width:100%;
+    text-align:center;
+    word-wrap:break-word;
+    /*flex-shrink:1;*/
+    -webkit-font-smoothing:antialiased;;
+    padding:0 3em 0;
 }
 
 .symb
 {
     opacity:0;
-    flex-shrink:0;
+}
+
+.symb img
+{
+    height:8em;
 }
 
 .logo p
 {
-    opacity:0;
-    color:hsla(51, 15%, 95%, 0.92);
+    color:hsla(234, 72%, 16%, 1);
     margin:0;
 }
 
 #iglesia
 {
-
+    opacity:0;
     font-family:'Mate SC', serif;
     font-size:1.4em;
-    letter-spacing:.5em;
+    letter-spacing:.75em;
+    font-weight:bold;
 }
 
 #columna
 {
-
+    opacity:0;
     font-family:'Mate SC', serif;
-    font-size:1.4em;
-    letter-spacing:.4em;
+    font-size:1.5em;
+    letter-spacing:.3em;
 }
 
 #luz
 {
+    opacity:0;
     font-family:'Rosario', sans-serif;
     font-size:3em;
     letter-spacing:.2em;
     font-weight:bold;
-    color:hsla(51, 15%, 95%, 0.98);
+    color:hsla(234, 72%, 16%, 1);
 }
 
-#state
+.state
 {
-    font-family:;
-    font-size:1.3em;
-    letter-spacing:.7em;
+    font:bold 2em 'Muli', sans-serif;
+    /*font-size:2em;*/
+    padding:.3em;
+    letter-spacing:.4em;
+    border-top: .2em solid #1c2c54;
 }
 
 /*bar*/
-/*
+
+.bar-nav
+{
+    width:100%;
+}
+
 .bar
 {
     display:-webkit-flex;
     display:flex;
     opacity:0;
-    height:10%;
+    height:4em;
     width:100%;
     -webkit-flex-flow:row wrap;
     flex-flow:row wrap;
@@ -105,17 +114,19 @@ body
     justify-content:space-around;
     -webkit-align-items:center;
     align-items:center;
-    margin:2em;
+    margin:0em;
+    padding:0;
     -webkit-font-smoothing:antialiased;
     background-color:#fff;
+    list-style:none;
 }
 
-.bar p
+.top-border
 {
-    margin:0;
-    font-size:1.2em;
-    color:#000;
-}*/
+    width:80%;
+    height:1em;
+    background-color:#1c2c54;
+}
 
 
 /************************ navbar */
@@ -134,13 +145,13 @@ body
 
 .nav-trigger
 {
-    position:fixed;
+    /*position:fixed;
     top:auto;
     bottom:4em;
     left:50%;
     margin-left:-21.5px;
     width: 40px;
-    height: 40px;
+    height: 40px;*/
     transition: transform .8s;
     -webkit-transition: transform .8s;
     /*time of trigger move*/
@@ -155,7 +166,7 @@ body
     display:block;
     margin-top:-2px;
     font-size:0px;
-    background-color:#fff;
+    background-color:#000;
     -webkit-transition: background-color .5s;
     transition: background-color .5s;
 }
@@ -168,7 +179,7 @@ body
     left:0;
     width:100%;
     height:100%;
-    background:#fff;
+    background:#000;
     content:'';
     -webkit-transition:transform .5s;
     transition:transform .5s;
@@ -304,29 +315,32 @@ body
 
 /********************* small screen */
 
-@media screen and (max-width:500px),screen and (max-height:500px)
+@media screen and (max-width:640px),screen and (max-height:500px)
 {
     .site-wrapper
     {
         border:none;
     }
 
+    .symb
+    {
+        margin:6.5em 0 1.5em;
+    }
+
     .logo
     {
-        width:95%;
-        margin:2em 0 2em;
+        margin:.6em 0 .6em;
         padding:0em;
-        border:.3em solid #1c2c54;
     }
 
     .bar
     {
-        background-color:transparent;
-        width:55px;
-    }
-    .bar p
-    {
         display:none;
+    }
+
+    .top-border
+    {
+        height:.5em;
     }
 
     #iglesia
@@ -353,7 +367,7 @@ body
         position:fixed;
         top:2em;
         bottom:auto;
-        left:3em;
+        left:2em;
         /*margin-left:-21.5px;*/
         width: 50px;
         height: 50px;
