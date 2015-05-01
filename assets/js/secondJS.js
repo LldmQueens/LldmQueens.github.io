@@ -62,7 +62,7 @@ $(function(){
         overlay.className = 'nav-bar-overlay';
         nav.appendChild(overlay);
 
-        (nav).addEventListener('click', function(ev){
+        (trigger).addEventListener('click', function(ev){
 
             // stopPropagation keeps the click event local
             // doesnt let any other elemnents know
