@@ -108,19 +108,6 @@ html, body
     color:#000;
 }
 
-/********** flex the box to keep everything in middle*/
-/*.box
-{
-    display:-webkit-flex;
-    display:flex;
-    -webkit-flex-direction:column;
-    flex-direction:column;
-    -webkit-justify-content:center;
-    justify-content:center;
-    -webkit-align-items:center;
-    align-items:center;
-}*/
-
 
 /************************ navbar */
 .nav-bar

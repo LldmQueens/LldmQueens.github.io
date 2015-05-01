@@ -43,7 +43,7 @@ $(function(){
 
         closeClickFn = function(ev){
             resetMenu();
-            overlay.removeEventListener('click', closeClickFn);
+            overlay.removeEventListener('touchstart', closeClickFn);
         };
 
         // add a new div to display overlay
@@ -51,7 +51,7 @@ $(function(){
         overlay.className = 'nav-bar-overlay';
         nav.appendChild(overlay);
 
-        trigger.addEventListener('click', function(ev){
+        trigger.addEventListener('touchstart', function(ev){
             // stopPropagation keeps the click event local
             // doesnt let any other elemnents know
             // this prevents events in  triggers parent element from firing
@@ -66,7 +66,7 @@ $(function(){
             else{
                 // $('#nav').removeClass('nav-bar');
                 $('#nav').addClass('nav-bar-open');
-                overlay.addEventListener('click', closeClickFn);
+                overlay.addEventListener('touchstart', closeClickFn);
             }
 
         });
