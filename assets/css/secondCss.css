@@ -11,8 +11,7 @@ html, body
 
 body
 {
-    background-image:url('../img/whirl.jpg');
-
+    background-image:url('../img/whirl2.jpg');
 }
 
 .site-wrapper
@@ -40,7 +39,7 @@ body
     flex-shrink:0;
     margin-top:2em;
     -webkit-font-smoothing:antialiased;
-    background-color:hsla(223, 27%, 16%, .6);
+    background-color:hsla(223, 27%, 16%, .9);
     border:.7em solid #1c2c54;
     padding:1em;
     opacity:0;
@@ -63,7 +62,7 @@ body
 {
 
     font-family:'Mate SC', serif;
-    font-size:1em;
+    font-size:1.4em;
     letter-spacing:.5em;
 }
 
@@ -71,7 +70,7 @@ body
 {
 
     font-family:'Mate SC', serif;
-    font-size:1.1em;
+    font-size:1.4em;
     letter-spacing:.4em;
 }
 
@@ -127,7 +126,7 @@ body
     left:0;
     width:100%;
     height:0;
-    border:0px solid red;
+    border:0px solid hsla(213, 76%, 53%, 1);
     background-color:transparent;
     -webkit-transition:border-width .5s, height 0s .5s;
     transition:border-width .5s, height 0s .5s;
@@ -252,8 +251,8 @@ body
     left:0;
     width:100%;
     height:100%;
-    border: 4em solid red;
-    background-color:hsla(223, 46%, 23%, .8);
+    border: 4em solid hsla(213, 76%, 53%, 1);
+    background-color:hsla(223, 46%, 23%, 1);
     transition: border-width .5s, background-color .5s;
     -webkit-transition: border-width .5s, background-color .5s;
 }
@@ -307,11 +306,17 @@ body
 
 @media screen and (max-width:500px),screen and (max-height:500px)
 {
+    .site-wrapper
+    {
+        border:none;
+    }
+
     .logo
     {
         width:95%;
         margin:2em 0 2em;
         padding:0em;
+        border:.3em solid #1c2c54;
     }
 
     .bar
@@ -326,13 +331,13 @@ body
 
     #iglesia
     {
-        font-size:1.18em;
+        font-size:1em;
         letter-spacing:.25em;
     }
     #columna
     {
-        font-size:.9em;
-        letter-spacing:.25em;
+        font-size:.8em;
+        letter-spacing:.23em;
     }
     #luz
     {
@@ -341,5 +346,30 @@ body
     #state
     {
         font-size:1.3em;
+    }
+
+    .nav-trigger
+    {
+        position:fixed;
+        top:2em;
+        bottom:auto;
+        left:3em;
+        /*margin-left:-21.5px;*/
+        width: 50px;
+        height: 50px;
+        transition: transform .8s;
+        -webkit-transition: transform .8s;
+        /*time of trigger move*/
+    }
+
+    .nav-bar.nav-bar-open .nav-trigger
+    {
+        /*position:fixed;
+        top:auto;
+        bottom:1em;
+        left:50%;
+        margin-left:-28.5px;*/
+        transform: translateY(-.5em);
+        -webkit-transform: translateY(-.5em);
     }
 }
