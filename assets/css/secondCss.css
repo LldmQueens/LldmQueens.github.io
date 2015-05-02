@@ -139,14 +139,19 @@ body
     background-color:#1c2c54;*/
 }
 
-/**********************video page*/
+/**********************video and contact page*/
 .container
 {
     width: 90%;
     padding: .5em;
-    margin:0;
+    margin-bottom:8em;
     background:#fff;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.phone p
+{
+    font: 2em 'Mate SC', serif;
 }
 
 /************************ navbar */
@@ -438,5 +443,25 @@ body
         margin-left:-28.5px;*/
         transform: translateY(-.5em);
         -webkit-transform: translateY(-.5em);
+    }
+
+    /**************footer*/
+    .foot
+    {
+        position:fixed;
+        bottom:0;
+        top:auto;
+        width:100%;
+        height:5em;
+        margin-top:3em;
+        background-color:tomato;
+    }
+
+    .foot .close p
+    {
+        text-align:center;
+        width:100%;
+        height:100%;
+        background-color:tomato;
     }
 }
