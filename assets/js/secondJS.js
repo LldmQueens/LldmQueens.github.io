@@ -5,7 +5,7 @@
 /*blast and velocity for banner words*/
 $(".symb")
 .delay(250)
-.velocity("transition.fadeIn", {duration:5000});
+.velocity("transition.fadeIn",2000);
 
 $(".logo")
 .delay(400)
@@ -15,7 +15,7 @@ $("#iglesia")
 .delay(700)
 .velocity("transition.slideDownIn", 1200);
 
-$("#columna")
+$("#columna, .state, .top-border")
 .delay(500)
 .velocity("transition.slideDownIn", 1200);
 
