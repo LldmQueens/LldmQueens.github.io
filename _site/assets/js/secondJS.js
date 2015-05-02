@@ -29,6 +29,11 @@ $(".bar")
 
 $(function(){
 
+    init();
+
+    // // responsive video
+    $('.container').fitVids();
+
   // nav bar
 
     function init(){
@@ -85,7 +90,5 @@ $(function(){
 
     }
 
-
-init();
 
 });
