@@ -365,7 +365,7 @@ body
 
     .symb_def
     {
-        margin:4em 0 3em;
+        margin:6.5em 0 1em;
     }
 
     .symb_def img
@@ -421,7 +421,7 @@ body
         position:fixed;
         top:1em;
         bottom:auto;
-        left:.8em;
+        left:1em;
         /*margin-left:-21.5px;*/
         width: 50px;
         height: 50px;

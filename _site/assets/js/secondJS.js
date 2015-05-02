@@ -35,6 +35,10 @@ $(function(){
     // // responsive video
     (video).fitVids();
 
+    var map = $('.map');
+    (map).fitVids();
+
+
   // nav bar
 
     function init(){
