@@ -31,8 +31,9 @@ $(function(){
 
     init();
 
+    var video = $('.container');
     // // responsive video
-    $('.container').fitVids();
+    (video).fitVids();
 
   // nav bar
 
