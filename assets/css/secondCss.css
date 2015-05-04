@@ -7,6 +7,7 @@
 html, body
 {
     width:100%;
+    height:auto;
 }
 
 body
@@ -25,7 +26,7 @@ body
     -webkit-align-items:center;
     align-items:center;
     background-color:#fff;
-    /*height:100%;*/
+    min-height:100%
     width:100%;
 }
 
@@ -292,11 +293,11 @@ body
 /*reveals the hidden nav*/
 .nav-bar.nav-bar-open
 {
-    position:fixed;
+    /*position:fixed;
     top:0;
     left:0;
-    width:100%;
-    height:150%;
+    width:100%;*/
+    min-height:100%;
     border: 4em solid rgba(21, 30, 40, 0.5);
     background-color:hsla(212, 32%, 12%, 1);
     transition: border-width .3s, background-color .3s;
@@ -464,4 +465,19 @@ body
         height:100%;
         background-color:tomato;
     }
+}
+
+/*landscape mode: alter drop down menu*/
+@media screen and (max-height:370px)
+{
+    .nav-bar ul
+    {
+        top:.5em
+    }
+
+    .nav-bar ul li
+    {
+        margin-bottom:.5em;
+    }
+
 }

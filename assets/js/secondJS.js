@@ -32,7 +32,7 @@ $(function(){
     init();
 
     var video = $('.container');
-    // // responsive video
+ // responsive video
     (video).fitVids();
 
 
