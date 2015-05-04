@@ -237,10 +237,9 @@ body
 
 .nav-bar ul
 {
-    position: fixed;
-    top: 1.5em;
-    left: 50%;
-    margin-left:-6.29em;
+    /*position: fixed;*/
+    /*top: 1.5em;*/
+    margin:1.4em auto 0;
     width:50%;
     padding: .3em;
     list-style: none;
