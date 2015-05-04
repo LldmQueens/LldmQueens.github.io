@@ -51,23 +51,23 @@ $(function(){
 
         // eventtype = mobilecheck() ? 'touchstart' : 'click',
         // querySelector returns first match to a.nav-trigger
-        trigger = nav.querySelector('a.nav-trigger'),
+        trigger = document.getElementById('trigger'),
 
         resetMenu = function(){
             // removes open nav property and adds default
-            $('#nav').removeClass('nav-bar-open');
+            $('#nav, #trigger').removeClass('nav-bar-open');
             // $('#nav').addClass('nav-bar');
         },
 
         closeClickFn = function(ev){
             resetMenu();
-            overlay.removeEventListener('click', closeClickFn);
+            // overlay.removeEventListener('click', closeClickFn);
         };
 
         // add a new div to display overlay
-        var overlay = document.createElement('div');
-        overlay.className = 'nav-bar-overlay';
-        nav.appendChild(overlay);
+        // var overlay = document.createElement('div');
+        // overlay.className = 'nav-bar-overlay';
+        // nav.appendChild(overlay);
 
         (trigger).addEventListener('click', function(ev){
 
@@ -79,13 +79,13 @@ $(function(){
             //stops the default action of trigger.
             ev.preventDefault();
 
-            if($('#nav').hasClass('nav-bar-open')){
+            if($('#nav, #trigger').hasClass('nav-bar-open')){
                 resetMenu();
             }
             else{
                 // $('#nav').removeClass('nav-bar');
-                $('#nav').addClass('nav-bar-open');
-                overlay.addEventListener('click', closeClickFn);
+                $('#nav, #trigger').addClass('nav-bar-open');
+                // overlay.addEventListener('click', closeClickFn);
             }
 
         });
