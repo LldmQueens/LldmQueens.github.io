@@ -158,6 +158,12 @@ body
 /************************ navbar */
 .nav-bar
 {
+    display:flex;
+    display:-webkit-flex;
+    -webkit-flex-direction:column;
+    flex-direction:column;
+    -webkit-align-items:center;
+    align-items:center;
     visibility:hidden;
     opacity:0;
     position:fixed;
@@ -194,8 +200,8 @@ body
     position: absolute;
     top:50%;
     left:6%;
-    width:43px;
-    height:.29rem;
+    width:36px;
+    height:.28rem;
     margin-top:-2px;
     font-size:0px;
     background-color:#000;
@@ -237,11 +243,10 @@ body
 
 .nav-bar ul
 {
-    /*position: fixed;*/
-    /*top: 1.5em;*/
-    margin:1.4em auto 0;
+    /*margin:1.4em auto 0;
     width:50%;
-    padding: .3em;
+    padding: .3em;*/
+    padding:0;
     list-style: none;
     backface-visibility: hidden;
 
@@ -252,6 +257,8 @@ body
     transition: visibility .2s, opacity .2s;
     -webkit-transition: visibility .2s, opacity .2s;
 }
+
+
 
 /* allows menu list to fit in center of ul tag*/
 .nav-bar ul li,
@@ -270,23 +277,6 @@ body
     margin-bottom:1.5em;
 }
 
-/*this hides the whole list out of window bounds*/
-/*.nav-bar ul {
-	transform: translate3d(0,-150%,0);
-    -webkit-transform: translate3d(0,-150%,0);
-}*/
-
-/*li:first-child*/
-
-/*.nav-bar ul li:nth-child(2) {
-	transform: translate3d(0,0,0);
-    -webkit-transform: translate3d(0,0,0);
-}
-
-.nav-bar ul li:nth-child(3) {
-	transform: translate3d(0,0,0);
-    -webkit-transform: translate3d(0,0,0);
-}*/
 
 /*OPEN***************************************/
 
@@ -308,16 +298,18 @@ body
     -webkit-transition: border-width .3s, background-color .3s;*/
 }
 
-/*#trigger.nav-bar-open .nav-trigger
+#trigger.nav-bar-open span
 {
+    height:.18rem;
+    width:35px;
     /*position:fixed;
     top:auto;
     bottom:1em;
     left:50%;
     margin-left:-28.5px;
     transform: translateY(3.3em);
-    -webkit-transform: translateY(3.3em);
-}*/
+    -webkit-transform: translateY(3.3em);*/
+}
 
 .nav-bar.nav-bar-open .nav-overlay
 {
@@ -344,6 +336,7 @@ body
 /*reveals whole list of menu items when opened*/
 .nav-bar.nav-bar-open ul
 {
+    padding:0;
     visibility: visible;
     opacity:1;
     transition: visibility:.1s, opacity .1s;
@@ -455,7 +448,7 @@ body
         /*time of trigger move*/
     }
 
-    #trigger.nav-bar-open .nav-trigger
+    /*#trigger.nav-bar-open span
     {
         /*position:fixed;
         top:auto;
