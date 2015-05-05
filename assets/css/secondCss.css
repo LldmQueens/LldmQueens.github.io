@@ -115,7 +115,7 @@ body
 #state
 {
     opacity:0;
-    font-size:1.3em;
+    font:bold 1em 'Muli', sans-serif;
     text-align:right;
     letter-spacing:.4em;
     /*border-top: .13em solid #1c2c54;*/
@@ -123,9 +123,9 @@ body
 
 #state p
 {
-    font:bold 1em 'Muli', sans-serif;
+    /*font:bold 1em 'Muli', sans-serif;
     letter-spacing:.3em;
-    margin-top:.3em;
+    margin-top:.3em;*/
 }
 
 
