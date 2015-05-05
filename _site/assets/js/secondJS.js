@@ -15,7 +15,7 @@ $("#iglesia")
 .delay(700)
 .velocity("transition.slideDownIn", 1200);
 
-$("#columna, .state, .top-border")
+$("#columna, #state, .top-border")
 .delay(500)
 .velocity("transition.slideDownIn", 1200);
 
@@ -23,7 +23,7 @@ $("#luz")
 .delay(500)
 .velocity("transition.fadeIn",2000);
 
-$(".bar")
+$(".bar-nav")
 .delay(700)
 .velocity({opacity:1}, 1200);
 
