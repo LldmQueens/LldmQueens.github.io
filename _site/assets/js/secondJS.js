@@ -3,29 +3,29 @@
 
 
 /*blast and velocity for banner words*/
-$(".symb")
-.delay(250)
-.velocity("transition.fadeIn",2000);
+// $(".symb")
+// .delay(250)
+// .velocity("transition.fadeIn",2000);
 
-$(".logo")
-.delay(400)
-.velocity("transition.fadeIn",1600);
+// $("#home")
+// .delay(400)
+// .velocity("transition.fadeIn",1600);
 
-$("#iglesia")
-.delay(700)
-.velocity("transition.slideDownIn", 1200);
-
-$("#columna, #state, .top-border")
-.delay(500)
-.velocity("transition.slideDownIn", 1200);
-
-$("#luz")
-.delay(500)
-.velocity("transition.fadeIn",2000);
-
-$(".bar-nav")
-.delay(700)
-.velocity({opacity:1}, 1200);
+// $("#iglesia")
+// .delay(700)
+// .velocity("transition.slideDownIn", 1200);
+//
+// $("#columna, #state")
+// .delay(500)
+// .velocity("transition.slideDownIn", 1200);
+//
+// $("#luz")
+// .delay(500)
+// .velocity("transition.fadeIn",2000);
+// 
+// $("#bar")
+// .delay(700)
+// .velocity({opacity:1}, 1200);
 
 $(function(){
 
