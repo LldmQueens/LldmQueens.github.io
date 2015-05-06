@@ -7,13 +7,10 @@
 // .delay(250)
 // .velocity("transition.fadeIn",2000);
 
-// $("#home")
-// .delay(400)
-// .velocity("transition.fadeIn",1600);
 
-// $("#iglesia")
-// .delay(700)
-// .velocity("transition.slideDownIn", 1200);
+$("#home > p")
+.delay(500)
+.velocity("transition.slideDownIn", 1200);
 //
 // $("#columna, #state")
 // .delay(500)
@@ -22,7 +19,7 @@
 // $("#luz")
 // .delay(500)
 // .velocity("transition.fadeIn",2000);
-// 
+//
 // $("#bar")
 // .delay(700)
 // .velocity({opacity:1}, 1200);

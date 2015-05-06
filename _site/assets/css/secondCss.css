@@ -42,18 +42,17 @@ body
 
 .site-wrapper
 {
-    margin-bottom:-6em;
     background-color:#fff;
     width:100%;
-    height:90%;
+    min-height:90%;
 }
 
 
 /*logo*/
 .logo
 {
-    /*override horiontal flex props*/
-    /*opacity:0;*/
+
+    text-align:center;
     width:100%;
     padding:1em 0 .5em;
     /*text-align:center;*/
@@ -73,17 +72,6 @@ body
 {
     height:2.5em;
     margin:.5em;
-}
-
-.symb
-{
-    opacity:0;
-    /*margin-top:2em;*/
-}
-
-.symb img
-{
-    height:8em;
 }
 
 .logo p
@@ -122,7 +110,6 @@ body
 {
     /*opacity:0;*/
     font:bold 1em 'Muli', sans-serif;
-    text-align:right;
     letter-spacing:.4em;
 }
 
@@ -131,14 +118,18 @@ body
 
 .bar-nav
 {
-    opacity:0;
     width:100%;
     height:2em;
-    margin: 1em 0 0;
+    margin: 1em 0 2em;
     padding:0;
     -webkit-font-smoothing:antialiased;
     background-color:hsla(216, 24%, 24%, 1);
     list-style:none;
+}
+
+.bar-nav li
+{
+    height:100%;
 }
 
 .bar-nav li a
@@ -356,11 +347,6 @@ body
     /*-webkit-transform: translate3d(0,0,0);*/
 }
 
-.push
-{
-    height:6em;
-}
-
 /**************footer*/
 .foot
 {
@@ -376,7 +362,7 @@ body
     height:100%;
 }
 
-
+/*
 
 
 /********************* small screen */
@@ -393,33 +379,10 @@ body
         border:none;
     }
 
-    .symb
-    {
-        margin:6em 0 .5em;
-        align-self:center;
-        -webkit-align-self:center;
-    }
-
-    .symb img
-    {
-        height:6em;
-    }
-
-    .symb_def
-    {
-        margin:6.5em 0 1em;
-    }
-
-    .symb_def img
-    {
-        height:3.5em;
-    }
-
     .logo
     {
         margin:.6em 0 0;
         padding:0;
-        text-align:center;
     }
 
     .bar-nav
@@ -451,7 +414,6 @@ body
 
     #state
     {
-        text-align:center;
         margin-top:.4em;
         width:100%;
         font-size:1.2em;
@@ -506,4 +468,4 @@ body
         margin-bottom:.5em;
     }
 
-}
+}*/
