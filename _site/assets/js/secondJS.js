@@ -1,28 +1,7 @@
 
-
-
-
-/*blast and velocity for banner words*/
-// $(".symb")
-// .delay(250)
-// .velocity("transition.fadeIn",2000);
-
-
 $("#home > p")
 .delay(500)
 .velocity("transition.slideDownIn", 1200);
-//
-// $("#columna, #state")
-// .delay(500)
-// .velocity("transition.slideDownIn", 1200);
-//
-// $("#luz")
-// .delay(500)
-// .velocity("transition.fadeIn",2000);
-//
-// $("#bar")
-// .delay(700)
-// .velocity({opacity:1}, 1200);
 
 $(function(){
 

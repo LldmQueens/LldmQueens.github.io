@@ -15,7 +15,7 @@ html, body
 body
 {
     margin:0;
-    padding:0 4em 0;
+    padding:0;
 }
 
 .column
@@ -32,19 +32,32 @@ body
 {
     display:-webkit-flex;
     display:flex;
-    -webkit-flex-flow:row wrap;
-    flex-flow:row wrap;
+    -webkit-flex-flow:row no-wrap;
+    flex-flow:row no-wrap;
     -webkit-justify-content:space-around;
     justify-content:space-around;
-    -webkit-align-items:center;
-    align-items:center;
+
 }
 
 .site-wrapper
 {
     background-color:#fff;
     width:100%;
-    min-height:90%;
+    min-height:100%;
+}
+
+.sidebar-space
+{
+    width:200px;
+    flex-grow:0;
+    background-color:blue;
+}
+
+.page
+{
+    flex-grow:1;
+    flex-shrink:1;
+    width:75%;
 }
 
 
@@ -114,8 +127,52 @@ body
     letter-spacing:.4em;
 }
 
+/*sidebar*/
+.sidebar
+{
+    opacity:1;
+    overflow:hidden;
+    height:100%;
+    width:200px;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:hsla(216, 24%, 24%, 1);
+}
 
-/*bar*/
+.sidebar img
+{
+    margin:2em .5em 2em;
+    height:6em;
+}
+
+.sidebar ul
+{
+    width:100%;
+    padding:0;
+    text-align:right;
+    list-style: none;
+}
+
+.sidebar ul li
+{
+    padding:.5em;
+}
+
+.sidebar ul li a
+{
+    color:#fff;
+    margin:1em;
+    font-size:1.2em;
+    font-family:'Rosario', sans-serif;
+    letter-spacing: .2em;
+    text-transform:uppercase;
+    text-decoration:none;
+    text-align:left;
+}
+
+
+/*nav bar*/
 
 .bar-nav
 {
@@ -265,21 +322,25 @@ body
 .nav-bar ul li a
 {
     width:100%;
-    margin-left:1em;
     color:#fff;
     font-size:1.3em;
     font-family:'Rosario', sans-serif;
     letter-spacing: .5em;
+    text-transform:uppercase;
     text-decoration:none;
     text-align:left;
     display:block;
 }
 
+.nav-bar ul li a
+{
+    margin-left:2em;
+}
+
 .nav-bar ul li
 {
-    padding:.2em;
-    margin: .5em 0 .5em;
-    border: .1em solid rgb(69, 68, 61);
+    padding:.3em;
+    border-top: .1em solid rgb(69, 68, 61);
 }
 
 
@@ -356,6 +417,7 @@ body
 /**************footer*/
 .foot
 {
+    display:none;
     width:100%;
     height:6em;
     background-color:hsla(216, 24%, 24%, 1);
@@ -375,14 +437,24 @@ body
 
 @media screen and (max-width:640px),screen and (max-height:500px)
 {
-    body
-    {
-        padding:0;
-    }
-
     .site-wrapper
     {
+        min-height:90%;
+        width:100%;
+        margin:0;
         border:none;
+    }
+
+    .sidebar-space
+    {
+        display:none;
+    }
+
+    .page
+    {
+        flex-grow:0;
+        flex-shrink:0;
+        width:100%;
     }
 
     .logo
@@ -428,6 +500,11 @@ body
         border-top:.1em solid hsla(223, 13%, 31%, 1);
     }
 
+    .sidebar
+    {
+        display:none;
+    }
+
     /*************** trigger */
     #trigger
     {
@@ -463,6 +540,11 @@ body
     .container
     {
         margin:2em;
+    }
+
+    .foot
+    {
+        display:block;
     }
 }
 
