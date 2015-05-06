@@ -50,13 +50,16 @@ body
 {
     width:200px;
     flex-grow:0;
+    -webkit-flex-grow:0;
     background-color:blue;
 }
 
 .page
 {
     flex-grow:1;
+    -webkit-flex-grow:1;
     flex-shrink:1;
+    -webkit-flex-shrink:1;
     width:75%;
 }
 
@@ -453,7 +456,9 @@ body
     .page
     {
         flex-grow:0;
+        -webkit-flex-grow:0;
         flex-shrink:0;
+        -webkit-flex-shrink:0;
         width:100%;
     }
 
