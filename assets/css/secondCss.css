@@ -70,6 +70,7 @@ body
     position: relative;
     text-align:center;
     width:100%;
+    margin-bottom:2em;
     padding:1em 0 .5em;
     color:hsla(234, 72%, 16%, 1);
     /*text-align:center;*/
@@ -87,8 +88,7 @@ body
 
 .logo img
 {
-    height:2.5em;
-    margin:.5em;
+    display:none;
 }
 
 .logo p
@@ -145,13 +145,14 @@ body
 
 .sidebar img
 {
-    margin:2em .5em 2em;
+    margin:2em 0 2em;
     height:6em;
 }
 
 .sidebar ul
 {
     width:100%;
+    margin-top:2em;
     padding:0;
     text-align:right;
     list-style: none;
@@ -160,18 +161,24 @@ body
 .sidebar ul li
 {
     height:52px;
+    margin: .5em 0 .5em;
+    border-bottom: .1em solid #fff;
 }
 
 .sidebar ul li a
 {
     color:#fff;
     margin:1em;
-    font-size:1.2em;
-    font-family:'Rosario', sans-serif;
+    font: .8em 'Rosario', sans-serif;
     letter-spacing: .2em;
     text-transform:uppercase;
     text-decoration:none;
     text-align:left;
+}
+
+.social
+{
+    margin:1em;
 }
 
 .social img
@@ -182,10 +189,10 @@ body
 
 .footer
 {
-    color:#fff;
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
+    color:#999;
+    position: relative;
+    bottom: -5em;
+    font-size:.8em;
 }
 
 /*nav bar*/
@@ -220,8 +227,7 @@ body
 /**********************video and contact page*/
 .container
 {
-    width: 90%;
-    padding: .5em;
+    width: 70%;
     background:#fff;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -479,6 +485,13 @@ body
     {
         margin:.6em 0 0;
         padding:0;
+    }
+
+    .logo img
+    {
+        display:block;
+        height:3em;
+        margin-bottom:1em;
     }
 
     .bar-nav

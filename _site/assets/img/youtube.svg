@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- The icon can be used freely in both personal and commercial projects with no attribution required, but always appreciated. 
+<!-- The icon can be used freely in both personal and commercial projects with no attribution required, but always appreciated.
 You may NOT sub-license, resell, rent, redistribute or otherwise transfer the icon without express written permission from iconmonstr.com -->
 
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" fill='#c2c3b5' xml:space="preserve">
 <path id="youtube-icon" d="M129.861,50h24.735l16.933,63.551L187.265,50h24.951l-28.58,94.504v64.486h-24.558v-64.486L129.861,50z
 	 M211.104,179.739c0,20.668,10.8,31.428,31.949,31.428c17.538,0,31.35-11.729,31.35-31.428V122.25
 	c0-18.357-13.674-31.509-31.35-31.509c-19.204,0-31.949,12.691-31.949,31.509V179.739z M233.544,124.184
