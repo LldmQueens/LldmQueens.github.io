@@ -1,3 +1,6 @@
+/*fonts*/
+@import url(http://fonts.googleapis.com/css?family=Mate+SC|Rosario|Muli|Open+Sans|Gafata);
+
 *
 {
     box-sizing:border-box;
@@ -200,8 +203,45 @@ body
 .bio
 {
     width:100%;
-    padding:0 15% 0;
-    -webkit-font-smoothing: antialiased;
+    padding:0 15% 5%;
+}
+
+.bio p
+{
+    font:1.1em 'Gafata',sans-serif;
+    line-height:1.4em;
+    margin:0;
+    color:hsla(0, 3%, 21%, 1);
+}
+
+.bio p:first-of-type
+{
+    font: 2em 'Open Sans';
+    padding:.5em 0 .5em 0;
+    color:hsla(216, 52%, 20%, 1);
+}
+
+.bio p span:first-of-type, p span:nth-of-type(2)
+{
+    font:1.6em 'Open Sans';
+    line-height:1.2em;
+    color:hsla(0, 7%, 37%, 1);
+}
+
+.bio span
+{
+    font: .2em 'Open Sans', sans-serif;
+    line-height:0;
+    font-size:.7em;
+    color:hsla(216, 52%, 20%, 1);
+}
+
+.bio .line
+{
+    height:.13em;
+    width:100%;
+    background-color:#1c2c54;
+    margin:1em 0 1em;
 }
 
 .footer
@@ -592,9 +632,27 @@ body
         margin:2em;
     }
 
-    .bio h1
+    .bio
     {
-        font-size:1.5em;
+        padding:0 10% 0 18%;
+    }
+
+    .bio p:first-of-type
+    {
+        font: 1.5em 'Open Sans';
+        padding:1em 0 1em 0;
+        color:hsla(216, 52%, 20%, 1);
+    }
+
+    .bio p
+    {
+        font-size:1.2em;
+    }
+
+    .bio p span:nth-of-type(2)
+    {
+        font-size:1.7em;
+        color:hsla(0, 7%, 37%, 1);
     }
 
     .foot
