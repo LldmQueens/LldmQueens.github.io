@@ -1,5 +1,5 @@
 /*fonts*/
-@import url(http://fonts.googleapis.com/css?family=Mate+SC|Rosario|Muli|Open+Sans|Gafata);
+@import url(http://fonts.googleapis.com/css?family=Mate+SC|Rosario|Muli|Open+Sans|Maven+Pro|Montserrat|Karla);
 
 *
 {
@@ -190,8 +190,14 @@ body
     height:40px;
 }
 
+.content
+{
+    max-width:850px;
+}
+
 .banner
 {
+    padding: 0 5.5em 3em;
     height:auto;
     width:auto;
 }
@@ -199,43 +205,55 @@ body
 .banner img
 {
     max-width:100%;
-    max-height:24em;
 }
 
 .bio
 {
-    width:100%;
-    padding:0 15% 0;
+    padding: 0 5.5em 0;
 }
 
 .bio p
 {
-    font:1.1em 'Gafata',sans-serif;
-    line-height:1.4em;
+    -webkit-font-smoothing: antialiased;
+    font:1em 'Karla', sans-serif;
+    line-height:1.5em;
     margin:0;
-    color:hsla(0, 3%, 21%, 1);
+    color: hsla(150, 1%, 30%, 1);
+    text-rendering: optimizeLegibility;
 }
 
-.bio p:first-of-type
+.header
 {
-    font: 2em 'Open Sans';
-    padding:.5em 0 .5em 0;
+    width:100%;
+    padding: 0 5.5em 0;
+    text-align:right;
+    margin-bottom:2em;
+}
+
+.header p
+{
+    font: 2em 'Rosario', sans-serif;
     color:hsla(216, 52%, 20%, 1);
+    line-height:.9em;
+    margin:0;
 }
 
-.bio p span:first-of-type, p span:nth-of-type(2)
+.header span
 {
-    font:1.6em 'Open Sans';
-    line-height:1.2em;
-    color:hsla(0, 7%, 37%, 1);
+    font-size:.5em;
+    color:#777;
 }
 
-.bio span
+.bio p:nth-of-type(3)
 {
     font: .2em 'Open Sans', sans-serif;
-    line-height:0;
-    font-size:.7em;
     color:hsla(216, 52%, 20%, 1);
+}
+
+.bio blockquote
+{
+    padding-left:1em;
+    border-left:.5em solid hsla(230, 10%, 89%, 1);
 }
 
 .bio .line
@@ -630,27 +648,19 @@ body
         margin:2em;
     }
 
+    .banner
+    {
+        padding:0;
+    }
+
     .bio
     {
         padding:0 10% 0 18%;
     }
 
-    .bio p:first-of-type
-    {
-        font: 1.5em 'Open Sans';
-        padding:1em 0 1em 0;
-        color:hsla(216, 52%, 20%, 1);
-    }
-
     .bio p
     {
-        font-size:1.2em;
-    }
-
-    .bio p span:nth-of-type(2)
-    {
-        font-size:1.7em;
-        color:hsla(0, 7%, 37%, 1);
+        font-size:1.14em;
     }
 
     .foot
