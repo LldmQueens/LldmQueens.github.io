@@ -192,7 +192,7 @@ body
 
 .content
 {
-    max-width:850px;
+    max-width:825px;
 }
 
 .banner
@@ -222,12 +222,18 @@ body
     text-rendering: optimizeLegibility;
 }
 
+.bio p span
+{
+    font-weight:bold;
+    font-size:1.5em;
+}
+
 .header
 {
     width:100%;
     padding: 0 5.5em 0;
     text-align:right;
-    margin-bottom:2em;
+    margin-bottom:2.5em;
 }
 
 .header p
@@ -246,7 +252,8 @@ body
 
 .bio p:nth-of-type(3)
 {
-    font: .2em 'Open Sans', sans-serif;
+    text-align:right;
+    font: .7em 'Open Sans', sans-serif;
     color:hsla(216, 52%, 20%, 1);
 }
 
@@ -648,9 +655,22 @@ body
         margin:2em;
     }
 
+    .header
+    {
+        text-align:center;
+        margin-bottom:1em;
+    }
+
+    .header p
+    {
+        font-size:2.5em;
+    }
+
+
     .banner
     {
         padding:0;
+        margin-bottom:1.5em;
     }
 
     .bio
@@ -661,6 +681,11 @@ body
     .bio p
     {
         font-size:1.14em;
+    }
+
+    .bio blockquote
+    {
+        font-size:1.05em;
     }
 
     .foot
