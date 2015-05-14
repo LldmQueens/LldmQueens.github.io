@@ -120,6 +120,7 @@ body
 .slide ul,a
 {
     list-style:none;
+    font: 1em 'Open Sans',sans-serif;
     padding:0;
     text-decoration:none;
     color:#fff;
