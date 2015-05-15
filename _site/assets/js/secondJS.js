@@ -5,11 +5,45 @@ $("#home > p")
 
 $(function(){
 
-    init();
+    // responsive video and map
 
-    var video = $('.container');
- // responsive video
-    (video).fitVids();
+    // grab iframe
+    var iframes = document.getElementsByTagName('iframe'),
+    count = iframes.length;
+
+    // loop thru each video if more than one
+    for (var i = 0; i < count; i++) {
+
+        var iframe = iframes[i];
+
+        // gets ratio of video dimensions
+        var videoRatio = (iframe.height/iframe.width) * 100;
+
+        iframe.style.position = 'absolute';
+        iframe.style.top = '0';
+        iframe.style.left = '0';
+        // below, non style declarations.
+        // this directly overrides iframe dimensions
+        iframe.width = '100%';
+        iframe.height = '100%';
+
+        //create fluid wrap for video
+        var wrap = document.createElement('div');
+
+        wrap.className = 'fluid-vid';
+        wrap.style.width = '100%';
+        wrap.style.position = 'relative';
+        wrap.style.paddingTop = videoRatio + '%';
+
+        // wrap iframe in this new div
+        var iframeParent = iframe.parentNode;
+        iframeParent.insertBefore(wrap,iframe);
+        wrap.appendChild(iframe);
+    }
+
+
+
+    init();
 
 
   // nav bar
@@ -43,9 +77,9 @@ $(function(){
         };
 
         // add a new div to display overlay
-        var overlay = document.createElement('div');
-        overlay.className = 'overlay';
-        menu.appendChild(overlay);
+        // var overlay = document.createElement('div');
+        // overlay.className = 'overlay';
+        // menu.appendChild(overlay);
 
         (trigger).addEventListener('click', function(ev){
 
@@ -63,7 +97,7 @@ $(function(){
             else{
                 // $('#nav').removeClass('nav-bar');
                 $('#trigger,#menu').addClass('nav-bar-open');
-                (overlay).addEventListener('click', closeClickFn);
+                //(overlay).addEventListener('click', closeClickFn);
             }
 
         });

@@ -47,7 +47,8 @@ body
 {
     background-color:#fff;
     width:100%;
-    min-height:100%;
+    min-height:70%;
+    padding-bottom: 3em;
 }
 
 .top-bar
@@ -72,58 +73,43 @@ body
     position:fixed;
     top:60px;
     left:0;
-    width:15em;
+    width:100%;
     height:100%;
-    background-color:#777;
-    -webkit-transform:translateX(-16em);
-    transform: translateX(-16em);
+    background-color:#fff;
+    -webkit-transform:translateY(-43em);
+    transform: translateY(-43em);
     -webkit-transition:transform .2s;
     transition:transform .2s;
 }
 
 #menu.nav-bar-open .slide
 {
-    -webkit-transform:translateX(0);
-    transform: translateX(0);
+    -webkit-transform:translateY(0);
+    transform: translateY(0);
     -webkit-transition:transform .2s;
     transition:transform .2s;
 }
 
-.overlay
-{
-    display:none;
-    position:fixed;
-    top:60px;
-    left:15em;
-    width:100%;
-    height:100%;
-    background-color:hsla(0, 4%, 87%, 0.29);
-}
-
-#menu.nav-bar-open .overlay
-{
-    display:block;
-}
-
 .slide ul
 {
-    width:90%;
     margin-top:2em;
 }
 
 .slide ul li
 {
-    height:52px;
+    height:1.5em;
+    margin: 1.3em;
     text-align:center;
+    font: 2em 'Open Sans',sans-serif;
+    border-bottom: .2em solid hsla(0, 3%, 39%, 1);
 }
 
 .slide ul,a
 {
     list-style:none;
-    font: 1em 'Open Sans',sans-serif;
     padding:0;
     text-decoration:none;
-    color:#fff;
+    color:hsla(0, 3%, 39%, 1);
 }
 
 /*logo*/
@@ -195,13 +181,17 @@ body
 
 .social
 {
-    width:100%;
     text-align:right;
+}
+
+.social p:nth-child(2)
+{
+    text-align: right;
 }
 
 .social img
 {
-    margin:0;
+    margin:0 .5em 0;
     height:40px;
 }
 
@@ -223,18 +213,12 @@ body
 
 .banner
 {
-    padding: 0 5.5em 0;
     margin-bottom:2em;
 }
 
 .banner img
 {
     max-width:100%;
-}
-
-.bio
-{
-    padding: 0 5.5em 3em;
 }
 
 .bio p
@@ -257,7 +241,6 @@ body
 {
     width:100%;
     text-align:right;
-    padding:0 5.5em 0;
     margin:2em 0 .5em;
 }
 
@@ -298,10 +281,10 @@ body
 
 .slide_footer
 {
-    color:hsla(0, 7%, 80%, 1);
+    color:hsla(0, 0%, 52%, 1);
     position: absolute;
     bottom: 5em;
-    left:5em;
+    left:8em;
     font-size:.8em;
 }
 
@@ -311,16 +294,15 @@ body
 }
 
 /**********************video and contact page*/
-.container
+.media
 {
-    width: 70%;
-    background:#fff;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    width: 55%;
 }
 
-.map
+.content
 {
-    height:25em;
+    width:100%;
+    padding: 0 5.5em 0;
 }
 
 /************************ navbar */
@@ -482,8 +464,31 @@ body
 {
     width:100%;
     padding:0 5.5em 0;
-    height:7em;
-    background-color:hsla(216, 24%, 24%, 1);
+    /*height:22em;*/
+    background-color:hsla(223, 50%, 22%, 1);
+}
+
+.footer  div
+{
+    height:20em;
+    width:32%;
+    padding:2em 1.2em 1.2em;
+}
+
+.footer div p
+{
+    width:100%;
+    font:1em 'Open Sans',sans-serif;
+    text-align: left;
+    color:#fff;
+}
+
+.footer div p:first-child
+{
+    border-top: .4em solid #fff;
+    padding-top: 1em;
+    margin: 0;
+    font-size: .9em;
 }
 
 /********************* small screen */
@@ -492,12 +497,23 @@ body
 {
     .site-wrapper
     {
-        min-height:90%;
+        min-height:70%;
         width:100%;
         margin:0;
         border:none;
         padding-bottom:2em;
     }
+
+    .media
+    {
+        width: 100%;
+    }
+
+    .content
+    {
+        padding: 0 2em 0;
+    }
+
 
     .logo
     {
@@ -576,6 +592,11 @@ body
         height:.22rem;
     }
 
+    .slide ul li
+    {
+        font-size: 1.2em;
+    }
+
     .container
     {
         width:90%;
@@ -596,13 +617,7 @@ body
 
     .banner
     {
-        padding:0;
         margin-bottom:1.5em;
-    }
-
-    .bio
-    {
-        padding:0 10% 0 18%;
     }
 
     .bio p
@@ -616,28 +631,26 @@ body
         margin:0;
     }
 
+    .horizontal
+    {
+        flex-flow: row wrap;
+        -webkit-flex-flow:row wrap;
+    }
+
     .footer
     {
-        padding:0 10% 0 18%;
+        padding:0 .5em 0;
+    }
+
+    .footer  div
+    {
+        height:auto;
+        width:100%%;
+        padding:1.2em 1.2em 0;
     }
 
     .social img
     {
         height:3em;
     }
-}
-
-/*landscape mode: alter drop down menu*/
-@media screen and (max-height:370px)
-{
-    .nav-bar ul
-    {
-        top:.5em
-    }
-
-    .nav-bar ul li
-    {
-        margin-bottom:.5em;
-    }
-
 }
