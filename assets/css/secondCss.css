@@ -678,6 +678,17 @@ body
         margin:1em;
     }
 
+    .line
+    {
+        margin: 1em 0 .1em;
+    }
+
+    .notes
+    {
+        text-align: center;
+        font-size: .65em;
+    }
+
     .horizontal
     {
         flex-flow: row wrap;
