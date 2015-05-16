@@ -5,6 +5,11 @@ $("#home > p")
 
 $(function(){
 
+    // slide bio
+    $('.bio-button,.bio').on('click', function(){
+            $('.bio').slideToggle();
+    });
+
     // responsive video and map
 
     // grab iframe

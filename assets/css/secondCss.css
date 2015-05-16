@@ -1,5 +1,5 @@
 /*fonts*/
-@import url(http://fonts.googleapis.com/css?family=Mate+SC|Rosario|Muli|Open+Sans|Maven+Pro|Montserrat|Karla);
+@import url(http://fonts.googleapis.com/css?family=Mate+SC|Rosario|Muli|Open+Sans|Source+Sans+Pro|Montserrat|Arvo);
 
 *
 {
@@ -143,6 +143,7 @@ body
 {
     height:.13em;
     width:100%;
+    margin: 0;
     background-color:#1c2c54;
 }
 
@@ -224,12 +225,30 @@ body
     width:100%;
 }
 
+.bio
+{
+    display: none;
+}
+
+.bio-button
+{
+    border: .2em solid hsla(223, 50%, 22%, 1);
+    font: 1.2em 'Open Sans',sans-serif;
+    cursor: pointer;
+}
+
+.bio-button p
+{
+    padding: .3em 1em .3em;
+    margin: 0;
+}
+
 .bio p
 {
-    -webkit-font-smoothing: antialiased;
-    font:1em 'Karla', sans-serif;
+    font:1.1em 'Source Sans Pro', sans-serif;
     line-height:1.5em;
     color: hsla(230, 9%, 27%, 1);
+    -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
 
@@ -257,7 +276,7 @@ body
 
 .header p
 {
-    font: 2em 'Montserrat', sans-serif;
+    font: 2em 'Arvo', serif;
     color:hsla(216, 52%, 20%, 1);
     line-height:.9em;
     margin:0;
@@ -278,6 +297,8 @@ body
 
 .bio blockquote
 {
+    font:1.2em 'Source Sans Pro', sans-serif;
+    font-weight: bold;
     padding-left:1em;
     border-left:.5em solid hsla(230, 10%, 89%, 1);
 }
@@ -322,7 +343,7 @@ body
 
 .title p
 {
-    margin-bottom: 2em;
+    margin:0 0 2em;
     text-align: right;
     border-top: .4em solid hsla(223, 50%, 22%, 1);
     padding-top: .3em;
@@ -642,6 +663,11 @@ body
         margin-bottom:1.5em;
     }
 
+    /*.bio-button
+    {
+
+    }*/
+
     .bio p
     {
         font-size:1.1em;
@@ -649,8 +675,7 @@ body
 
     .bio blockquote
     {
-        font-size:1em;
-        margin:0;
+        margin:1em;
     }
 
     .horizontal
