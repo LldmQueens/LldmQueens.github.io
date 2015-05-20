@@ -71,7 +71,7 @@ body
 
 .top-bar .lang
 {
-    font-size: 1em;
+    font: 1em 'Open Sans',sans-serif;
     position: fixed;
     right: 1.7em;
     top: .3em;
@@ -555,6 +555,14 @@ body
         padding-bottom:2em;
     }
 
+    .top-bar .lang
+    {
+        font: .85em 'Open Sans',sans-serif;
+        position: fixed;
+        right: 1.7em;
+        top: .6em;
+    }
+
     .content
     {
         padding: 0 2em 3em;
@@ -639,6 +647,8 @@ body
 
     .nav-trigger span
     {
+        top:50%;
+        width:32px;
         height:.22rem;
     }
 
