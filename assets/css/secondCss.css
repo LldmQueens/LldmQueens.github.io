@@ -37,7 +37,7 @@ body
     display:flex;
     -webkit-flex-direction:row;
     flex-direction:row;
-    -webkit-justify-content:center;
+    -webkit-justify-content:space-around;
     justify-content: space-around;
     -webkit-align-items:center;
     align-items:center;
@@ -69,6 +69,14 @@ body
     box-shadow: 0 .01em 1em 0em hsla(0, 6%, 72%, 1);
 }
 
+.top-bar .lang
+{
+    font-size: 1em;
+    position: fixed;
+    right: 1.7em;
+    top: .3em;
+}
+
 .top-bar img
 {
     height:3.5em;
@@ -92,8 +100,8 @@ body
 {
     -webkit-transform:translateY(0);
     transform: translateY(0);
-    -webkit-transition:transform .2s;
-    transition:transform .2s;
+    /*-webkit-transition:transform .2s cubic-bezier(.14,.66,.56,.92);
+    transition:transform .2s cubic-bezier(.14,.66,.56,.92);*/
 }
 
 .slide ul
