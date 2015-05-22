@@ -200,18 +200,25 @@ body
 
 .bio-button p
 {
-    padding: .3em 1em .3em;
+    padding: .3em .5em .3em;
     margin: 0;
 }
 
 .bio p
 {
     font:1.1em 'Source Sans Pro', sans-serif;
+    text-indent: 1em;
     line-height:1.5em;
     color: hsla(230, 9%, 27%, 1);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
+
+.bio p:first-child
+{
+    text-indent:0;
+}
+
 
 .bio p span
 {
@@ -249,12 +256,6 @@ body
     color:#777;
 }
 
-.bio p:nth-of-type(3)
-{
-    text-align:right;
-    font: .7em 'Open Sans', sans-serif;
-    color:hsla(216, 52%, 20%, 1);
-}
 
 .bio blockquote
 {
@@ -297,11 +298,11 @@ body
 .title
 {
     width:100%;
+    margin-bottom: 1em;
 }
 
 .title p
 {
-    margin:0 0 2em;
     text-align: right;
     border-top: .4em solid hsla(223, 50%, 22%, 1);
     padding-top: .3em;
@@ -545,7 +546,7 @@ body
 
     .logo-wrap
     {
-        margin-bottom: 2em;
+        margin:100px auto .5em;
     }
 
     .logo img
@@ -605,7 +606,7 @@ body
 
     .banner
     {
-        margin-bottom:1.5em;
+        margin-bottom:1em;
     }
 
     /*.bio-button
