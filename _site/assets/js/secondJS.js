@@ -1,5 +1,5 @@
 
-$("#home > p")
+$("#home")
 .delay(500)
 .velocity("transition.slideDownIn", 1200);
 
