@@ -513,6 +513,12 @@ body
         top: .6em;
     }
 
+    .top-bar img
+    {
+        height:2.5em;
+        margin-top: .2em;
+    }
+
     .content
     {
         padding: 0 2em 3em;
@@ -569,8 +575,8 @@ body
     .nav-trigger span
     {
         top:50%;
-        width:32px;
-        height:.22rem;
+        width:30px;
+        height:.2rem;
     }
 
     .slide ul li
