@@ -480,6 +480,11 @@ body
     color:#fff;
 }
 
+.footer a
+{
+    color:#fff;
+}
+
 .footer div p:first-child
 {
     border-top: .4em solid #fff;
