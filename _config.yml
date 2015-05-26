@@ -1,0 +1,13 @@
+#Site settings
+
+title: "Lldm Queens"
+description: "La Luz del Mundo en Queens New York,
+Iglesia del Dios vivo Columna y Apoyo de la verdad"
+
+url: "http://lldmqueens.github.io"
+
+
+
+#Build settings
+markdown: redcarpet
+permalink: pretty
