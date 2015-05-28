@@ -1,0 +1,118 @@
+@media screen and (max-width:640px), screen and (max-height:500px)
+
+    .site-wrapper
+        min-height: 70%
+        width: 100%
+        margin: 0
+        border: none
+        padding-bottom: 2em
+
+    .top-bar
+        .lang
+            font: .85em 'Open Sans',sans-serif
+            +position(fixed, .6em 1.7em null null)
+
+        img
+            height: 2.5em
+            margin-top: .2em
+
+    .content
+        padding: 0 2em 3em
+
+    .map, .video
+        width: 100%
+
+    .title
+        p
+            padding-top: .3em
+            font-size: .69em
+            text-transform: uppercase
+            margin-top: 0
+
+    .logo
+        padding: 0
+
+        img
+            display: block
+            height: 4.5em
+
+    .logo-wrap
+        margin: 100px auto .5em
+
+
+    /*************** trigger */
+    #trigger
+        display: block
+        +position(fixed, .5em null auto 1em)
+        +size(50px)
+
+    .nav-trigger
+        +size(50px)
+
+        span
+            top: 50%
+            width: 30px
+            height: .2rem
+
+    .slide ul li
+        font-size: 1.2em
+
+    .container
+        width: 90%
+        margin: 2em
+
+    .header
+        padding: 0
+        margin-bottom: .5em
+
+        p
+            font-size: 1.3em
+
+    .banner
+        margin-bottom: 1em
+
+    .bio
+        p
+            font-size: .9em
+
+        p:nth-child(9)
+            font-size: 1.5em
+
+        blockquote
+            margin: 1em
+
+        span
+            font-size: 1.1em
+
+    .line
+        margin: 1em 0 .1em
+
+    .notes
+        text-align: center
+        font-size: .65em
+
+
+    .horizontal
+        +flex-flow(row wrap)
+
+    .footer
+        padding: 0 .5em 0
+
+        div
+            height: auto
+            width: 100%
+            padding: 1.2em 1.2em 0
+
+
+    .social img
+        height: 2.2em
+
+
+@media screen and (max-height:400px)
+
+    .slide
+        ul
+            margin-top: 0
+
+            li
+                font-size: 1em

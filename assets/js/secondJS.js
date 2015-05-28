@@ -5,9 +5,34 @@ $("#home")
 
 $(function(){
 
+    init();
+
     // slide bio
     $('.bio-button,.bio').on('click', function(){
             $('.bio').slideToggle();
+    });
+
+    $('.h2').on('click', function(){
+        $(this).next().slideToggle();
+    });
+
+    //slide bible quotes
+    $('.bible-text p:first-child').on('click', function(){
+
+        var bibtext = $(this).next();
+
+        if (bibtext.is(':visible')) {
+            bibtext.velocity(
+                {height: '0'},
+                {display: 'none'}
+            );
+        }
+        else {
+            bibtext.velocity({
+                height: '8em'},
+                {display: 'block'
+            });
+        }
     });
 
     // responsive video and map
@@ -45,10 +70,6 @@ $(function(){
         iframeParent.insertBefore(wrap,iframe);
         wrap.appendChild(iframe);
     }
-
-
-
-    init();
 
 
   // nav bar
@@ -108,6 +129,7 @@ $(function(){
         });
 
     }
+
 
 
 });

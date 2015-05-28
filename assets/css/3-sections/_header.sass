@@ -1,0 +1,56 @@
+*
+    box-sizing: border-box
+    -webkit-box-sizing: border-box
+    flex-shrink: 0
+    text-decoration: none
+
+html, body
+    width: 100%
+    height: 100%
+
+body
+    margin: 0
+    padding: 0
+
+.horizontal
+    +flex-horizontal
+
+.top-bar
+    z-index: 1
+    width: 100%
+    height: 60px
+    background-color: #fff
+    position: fixed
+    top: 0
+    left: 0
+    box-shadow: 0 .01em 1em 0em hsla(0, 6%, 72%, 1)
+
+    img
+        height: 3em
+        margin-top: .05em
+
+.lang
+    font: 1em 'Open Sans',sans-serif
+    position: fixed
+    right: 1.7em
+    top: .3em
+
+    p
+        a
+            color: $accent-color
+
+
+.logo-wrap
+    width: 100%
+    padding: 0 5.5em 0
+    margin: 120px auto 2.5em
+    max-width: 825px
+
+
+.logo-wrap img
+    height: 4em
+
+
+.logo p
+    width: 100%
+    margin: 0
