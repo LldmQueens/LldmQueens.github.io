@@ -14,7 +14,7 @@
     margin-top: 2em
 
     p
-        font: 2em $text-font
+        font: 2em $default-font
         color: hsla(216, 52%, 20%, 1)
         line-height: .9em
         margin: 0
@@ -32,7 +32,7 @@
         text-align: right
         border-top: .2em solid hsla(223, 50%, 22%, 1)
         padding-top: .3em
-        font: .85em $sub-heading
+        font: .85em $default-font
         text-transform: uppercase
 
 
@@ -47,7 +47,7 @@
     display: none
 
     p
-        font: .97em $text-font
+        font: .9em $text-font
         text-align: justify
         text-indent: 1em
         margin: .97em 0 .97em
@@ -62,10 +62,8 @@
 
 
     span
-        font-weight: bold
-        font-size: 1.3em
-
-
+        font: bold 1.3em $text-font
+        color: $text-color
 
     p:nth-child(9)
         text-indent: 0
@@ -74,15 +72,15 @@
         font-size: 2em
 
     blockquote
-        font-size: 1.1em
-        font-weight: bold
+        font: 1em $default-font
+        line-height: 1.4em
         padding-left: 1em
         border-left: .5em solid hsla(230, 10%, 89%, 1)
 
 
 .bio-button
     width: 100%
-    font: 1.2em 'Open Sans',sans-serif
+    font: 1.2em $default-font
     cursor: pointer
 
     p
@@ -101,7 +99,7 @@
 .notes
     width: 100%
     text-align: right
-    font: .7em 'Montserrat',sans-serif
+    font: .7em $default-font
     -webkit-font-smoothing: antialiased
     line-height: 1.5em
 
@@ -110,41 +108,3 @@
 
 .map
     width: 100%
-
-// bible study
-
-.study
-    width: 100%
-
-    .bible-text
-        margin: 1em 0 1em
-        width: 100%
-
-        p:first-child
-            font: 1.1em $subheadline-font
-            background-color: $accent-color
-
-        p:nth-child(2)
-            font: 1em $text-font
-            background-color: $bibtext-color
-            display: none
-            height: 0
-            overflow: scroll
-
-    h1
-
-        padding-right: 31%
-        margin-bottom: 2.2em
-
-    .comment
-        font: .75em $text-font
-
-    h2
-        font: 1.5em $subheadline-font
-
-
-    .h3
-        font: $sub-heading
-
-.arg
-    display: none

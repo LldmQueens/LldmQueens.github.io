@@ -1,7 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display|Merriweather|Montserrat|Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,500,700|Titillium+Web:300,400,600italic);
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
   flex-shrink: 0;
   text-decoration: none; }
 
@@ -61,7 +62,7 @@ body {
     margin-top: 0.05em; }
 
 .lang {
-  font: 1em "Open Sans", sans-serif;
+  font: 1em "Roboto", sans-serif;
   position: fixed;
   right: 1.7em;
   top: 0.3em; }
@@ -96,7 +97,7 @@ body {
   text-align: left;
   margin-top: 2em; }
   .header p {
-    font: 2em "Merriweather", serif;
+    font: 2em "Roboto", sans-serif;
     color: #182e4e;
     line-height: 0.9em;
     margin: 0; }
@@ -111,7 +112,7 @@ body {
     text-align: right;
     border-top: 0.2em solid #1c2c54;
     padding-top: 0.3em;
-    font: 0.85em "Montserrat", sans-serif;
+    font: 0.85em "Roboto", sans-serif;
     text-transform: uppercase; }
 
 .banner {
@@ -122,7 +123,7 @@ body {
 .bio {
   display: none; }
   .bio p {
-    font: 0.97em "Merriweather", serif;
+    font: 0.9em "Titilium Web", sans-serif;
     text-align: justify;
     text-indent: 1em;
     margin: 0.97em 0 0.97em;
@@ -133,22 +134,22 @@ body {
   .bio p:first-child {
     text-indent: 0; }
   .bio span {
-    font-weight: bold;
-    font-size: 1.3em; }
+    font: bold 1.3em "Titilium Web", sans-serif;
+    color: #3a3b40; }
   .bio p:nth-child(9) {
     text-indent: 0;
     margin: 0.2em 0 0.2em;
     font-weight: bold;
     font-size: 2em; }
   .bio blockquote {
-    font-size: 1.1em;
-    font-weight: bold;
+    font: 1em "Roboto", sans-serif;
+    line-height: 1.4em;
     padding-left: 1em;
     border-left: 0.5em solid #e0e1e6; }
 
 .bio-button {
   width: 100%;
-  font: 1.2em "Open Sans", sans-serif;
+  font: 1.2em "Roboto", sans-serif;
   cursor: pointer; }
   .bio-button p {
     text-align: right;
@@ -164,7 +165,7 @@ body {
 .notes {
   width: 100%;
   text-align: right;
-  font: 0.7em "Montserrat", sans-serif;
+  font: 0.7em "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5em; }
 
@@ -173,33 +174,6 @@ body {
 
 .map {
   width: 100%; }
-
-.study {
-  width: 100%; }
-  .study .bible-text {
-    margin: 1em 0 1em;
-    width: 100%; }
-    .study .bible-text p:first-child {
-      font: 1.1em "Lato", sans-serif;
-      background-color: #9799a5; }
-    .study .bible-text p:nth-child(2) {
-      font: 1em "Merriweather", serif;
-      background-color: rgba(179, 151, 135, 0.41);
-      display: none;
-      height: 0;
-      overflow: scroll; }
-  .study h1 {
-    padding-right: 31%;
-    margin-bottom: 2.2em; }
-  .study .comment {
-    font: 0.75em "Merriweather", serif; }
-  .study h2 {
-    font: 1.5em "Lato", sans-serif; }
-  .study .h3 {
-    font: "Montserrat", sans-serif; }
-
-.arg {
-  display: none; }
 
 .column {
   display: -webkit-box;
@@ -268,25 +242,29 @@ body {
   top: 60px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: -webkit-calc(100% - 60px);
+  height: calc(100% - 60px);
+  overflow: auto;
   background-color: #fff;
   -webkit-transform: translateY(-70em);
+  -moz-transform: translateY(-70em);
+  -ms-transform: translateY(-70em);
+  -o-transform: translateY(-70em);
   transform: translateY(-70em);
-  -webkit-transition: transform 0.2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
   transition: transform 0.2s; }
+  .slide ul {
+    margin-top: 2em; }
+    .slide ul li {
+      padding: 0.3em 0 0.3em;
+      font: 2em "Open Sans", sans-serif;
+      border-bottom: 0.1em solid #666060; }
   .slide ul, .slide a {
     list-style: none;
     padding: 0;
     text-decoration: none;
     color: #666060; }
-  .slide ul {
-    margin-top: 2em; }
-    .slide ul li {
-      margin: 1.3em;
-      padding-bottom: 0.3em;
-      text-align: center;
-      font: 2em "Open Sans", sans-serif;
-      border-bottom: 0.2em solid #666060; }
 
 .slide_social {
   width: 90%;
@@ -322,6 +300,7 @@ body {
     font-size: 0px;
     background-color: #9799a5;
     -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
     transition: background-color 0.5s; }
   .nav-trigger span:before, .nav-trigger span:after {
     position: absolute;
@@ -330,28 +309,85 @@ body {
     height: 100%;
     background-color: #9799a5;
     content: "";
-    -webkit-transition: transform 0.2s;
+    -webkit-transition: -webkit-transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
     transition: transform 0.2s; }
   .nav-trigger span:before {
     -webkit-transform: translateY(-250%);
+    -moz-transform: translateY(-250%);
+    -ms-transform: translateY(-250%);
+    -o-transform: translateY(-250%);
     transform: translateY(-250%); }
   .nav-trigger span:after {
     -webkit-transform: translateY(250%);
+    -moz-transform: translateY(250%);
+    -ms-transform: translateY(250%);
+    -o-transform: translateY(250%);
     transform: translateY(250%); }
 
 .nav-bar-open .nav-trigger span {
   background-color: transparent; }
 .nav-bar-open .nav-trigger span:before {
-  transform: translateY(0) rotate(45deg);
-  -webkit-transform: translateY(0) rotate(45deg); }
+  -webkit-transform: translateY(0) rotate(45deg);
+  -moz-transform: translateY(0) rotate(45deg);
+  -ms-transform: translateY(0) rotate(45deg);
+  -o-transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(45deg); }
 .nav-bar-open .nav-trigger span:after {
-  transform: translateY(0) rotate(-45deg);
-  -webkit-transform: translateY(0) rotate(-45deg); }
+  -webkit-transform: translateY(0) rotate(-45deg);
+  -moz-transform: translateY(0) rotate(-45deg);
+  -ms-transform: translateY(0) rotate(-45deg);
+  -o-transform: translateY(0) rotate(-45deg);
+  transform: translateY(0) rotate(-45deg); }
 .nav-bar-open .slide {
   -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
   transform: translateY(0); }
 
-@media screen and (max-width: 640px), screen and (max-height: 500px) {
+#themes {
+  font: 300 1.2em "Roboto", sans-serif; }
+
+.options p {
+  font: 500 0.9em "Roboto", sans-serif; }
+
+.study {
+  width: 100%;
+  color: #3a3b40; }
+  .study .bible-text {
+    margin: 1em 0 1em;
+    width: 100%; }
+    .study .bible-text p:first-child {
+      font: 1.1em "Roboto", sans-serif;
+      font-weight: 700; }
+    .study .bible-text p:nth-child(2) {
+      font: 0.9em "Titilium Web", sans-serif;
+      background-color: rgba(213, 205, 205, 0.457);
+      display: none;
+      height: 0;
+      overflow: scroll; }
+  .study h1 {
+    font: 700 2em "Roboto", sans-serif;
+    padding-right: 56%;
+    margin-bottom: 1.6em; }
+  .study .thesis {
+    font: 400 0.9em "Titilium Web", sans-serif;
+    text-align: justify;
+    padding-left: 23%;
+    color: #3a3b40;
+    line-height: 1.35em; }
+  .study .comment {
+    font: 0.75em "Titilium Web", sans-serif; }
+  .study h2 {
+    font: 1em "Roboto", sans-serif; }
+  .study h3 {
+    font: 1em "Roboto", sans-serif; }
+
+.arg {
+  display: none; }
+
+@media screen and (max-width: 640px) {
   .site-wrapper {
     min-height: 70%;
     width: 100%;
@@ -384,10 +420,10 @@ body {
     padding: 0; }
     .logo img {
       display: block;
-      height: 4.5em; }
+      height: 4em; }
 
   .logo-wrap {
-    margin: 100px auto 0.5em; }
+    margin: 100px auto 1.5em; }
 
   /*************** trigger */
   #trigger {
@@ -408,7 +444,8 @@ body {
       height: 0.2rem; }
 
   .slide ul li {
-    font-size: 1.2em; }
+    font-size: 1.3em;
+    padding: 0.45em 0 0.45em; }
 
   .container {
     width: 90%;
@@ -453,6 +490,11 @@ body {
 
   .social img {
     height: 2.2em; } }
+.study h1 {
+  padding-right: 50%; }
+.study .thesis {
+  padding-left: 20%; }
+
 @media screen and (max-height: 400px) {
   .slide ul {
     margin-top: 0; }

@@ -11,7 +11,7 @@ $(function(){
     $('.bio-button,.bio').on('click', function(){
             $('.bio').slideToggle();
     });
-
+    // slide bible text
     $('.h2').on('click', function(){
         $(this).next().slideToggle();
     });
