@@ -1,8 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,500,700|Titillium+Web:300,400,600italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,500,700|Open+Sans|Titillium+Web:300,400,600italic);
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
   flex-shrink: 0;
   text-decoration: none; }
 
@@ -123,7 +122,7 @@ body {
 .bio {
   display: none; }
   .bio p {
-    font: 0.9em "Titilium Web", sans-serif;
+    font: 1em "Titilium Web", sans-serif;
     text-align: justify;
     text-indent: 1em;
     margin: 0.97em 0 0.97em;
@@ -217,7 +216,7 @@ body {
       font-size: 0.9em; }
     .footer div p, .footer div a {
       width: 100%;
-      font: 1em "Open Sans", sans-serif;
+      font: bold 1em "Open Sans", sans-serif;
       text-align: left;
       color: #fff; }
   .footer .social {
@@ -352,6 +351,19 @@ body {
 .options p {
   font: 500 0.9em "Roboto", sans-serif; }
 
+.bible h1 {
+  font: 700 2em "Roboto", sans-serif;
+  width: 40%;
+  margin-bottom: 1.5em; }
+
+.thesis {
+  font: 400 1em "Titilium Web", sans-serif;
+  width: 68%;
+  padding: 1em 0 1em;
+  border-top: 0.2em solid #9799a5;
+  color: #3a3b40;
+  line-height: 1.35em; }
+
 .study {
   width: 100%;
   color: #3a3b40; }
@@ -359,33 +371,31 @@ body {
     margin: 1em 0 1em;
     width: 100%; }
     .study .bible-text p:first-child {
-      font: 1.1em "Roboto", sans-serif;
-      font-weight: 700; }
+      font: 700 1.1em "Roboto", sans-serif;
+      padding-left: 3em; }
     .study .bible-text p:nth-child(2) {
-      font: 0.9em "Titilium Web", sans-serif;
+      font: italic 600 0.85em "Titilium Web", sans-serif;
+      padding: 0.5em 5.5em 0;
       background-color: rgba(213, 205, 205, 0.457);
+      line-height: 1.5em;
       display: none;
       height: 0;
       overflow: scroll; }
-  .study h1 {
-    font: 700 2em "Roboto", sans-serif;
-    padding-right: 56%;
-    margin-bottom: 1.6em; }
-  .study .thesis {
-    font: 400 0.9em "Titilium Web", sans-serif;
-    text-align: justify;
-    padding-left: 23%;
-    color: #3a3b40;
-    line-height: 1.35em; }
   .study .comment {
-    font: 0.75em "Titilium Web", sans-serif; }
+    font: italic 0.9em "Titilium Web", sans-serif;
+    padding-left: 2em; }
   .study h2 {
-    font: 1em "Roboto", sans-serif; }
+    font: 300 1.5em "Roboto", sans-serif;
+    padding: 1em 0 0 1em; }
   .study h3 {
-    font: 1em "Roboto", sans-serif; }
+    font: 300 2em "Roboto", sans-serif; }
+  .study .base span {
+    font: 2em "Titilium Web", sans-serif; }
 
 .arg {
-  display: none; }
+  display: none;
+  padding: 1em 0 1em 1em;
+  border-left: 0.2em solid; }
 
 @media screen and (max-width: 640px) {
   .site-wrapper {
@@ -489,12 +499,13 @@ body {
       padding: 1.2em 1.2em 0; }
 
   .social img {
-    height: 2.2em; } }
-.study h1 {
-  padding-right: 50%; }
-.study .thesis {
-  padding-left: 20%; }
+    height: 2.2em; }
 
+  .bible h1 {
+    width: 50%; }
+
+  .thesis {
+    width: auto; } }
 @media screen and (max-height: 400px) {
   .slide ul {
     margin-top: 0; }

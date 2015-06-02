@@ -5,6 +5,19 @@
     p
         font: 500 .9em $default-font
 
+.bible
+    h1
+        font: 700 2em $default-font
+        width: 40%
+        margin-bottom: 1.5em
+
+.thesis
+    font: 400 1em $text-font
+    width: 68%
+    padding: 1em 0 1em
+    border-top: .2em solid $accent-color
+    color: $text-color
+    line-height: 1.35em
 
 // inner tema
 .study
@@ -16,37 +29,35 @@
         width: 100%
 
         p:first-child
-            font: 1.1em $default-font
-            font-weight: 700
+            font: 700 1.1em $default-font
+            padding-left: 3em
 
         p:nth-child(2)
-            font: .9em $text-font
+            font: italic 600 .85em $text-font
+            padding: .5em 5.5em 0
             background-color: $bibtext-color
+            line-height: 1.5em
             display: none
             height: 0
             overflow: scroll
 
-    h1
-        font: 700 2em $default-font
-        padding-right: 56%
-        margin-bottom: 1.6em
-
-    .thesis
-        font: 400 .9em $text-font
-        text-align: justify
-        padding-left: 23%
-        color: $text-color
-        line-height: 1.35em
-
     .comment
-        font: .75em $text-font
+        font: italic .9em $text-font
+        padding-left: 2em
 
     h2
-        font: 1em $default-font
+        font: 300 1.5em $default-font
+        padding: 1em 0 0 1em
 
 
     h3
-        font: 1em $default-font
+        font: 300 2em $default-font
+
+    .base
+        span
+            font: 2em $text-font
 
 .arg
     display: none
+    padding: 1em 0 1em 1em
+    border-left: .2em solid
