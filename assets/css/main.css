@@ -120,7 +120,10 @@ body {
     width: 100%; }
 
 .bio {
-  display: none; }
+  display: none;
+  background-color: rgba(195, 184, 177, 0);
+  background-image: -webkit-linear-gradient(rgba(195, 184, 177, 0), rgba(195, 184, 177, 0.6));
+  background-image: linear-gradient(rgba(195, 184, 177, 0), rgba(195, 184, 177, 0.6)); }
   .bio p {
     font: 1em "Titilium Web", sans-serif;
     text-align: justify;
@@ -346,23 +349,28 @@ body {
   transform: translateY(0); }
 
 #themes {
-  font: 300 1.2em "Roboto", sans-serif; }
+  font: 300 2em "Roboto", sans-serif;
+  color: #3a3b40;
+  padding-bottom: 0.2em;
+  border-bottom: 0.14em solid #9799a5; }
 
-.options p {
-  font: 500 0.9em "Roboto", sans-serif; }
+.options a {
+  font: 500 1.5em "Roboto", sans-serif;
+  color: #3a3b40;
+  padding-left: 1em; }
 
 .bible h1 {
   font: 700 2em "Roboto", sans-serif;
   width: 40%;
   color: #3a3b40;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1em; }
 
 .thesis {
-  font: 400 1em "Titilium Web", sans-serif;
-  width: 68%;
+  font: 400 18px "Titilium Web", sans-serif;
   padding: 1em 0 1em;
-  border-top: 0.2em solid #9799a5;
-  border-bottom: 0.2em solid #9799a5;
+  margin: 0 0 3em;
+  text-align: justify;
+  border-bottom: 0.14em solid #9799a5;
   color: #3a3b40;
   line-height: 1.35em; }
 
@@ -376,14 +384,16 @@ body {
       font: 700 1.1em "Roboto", sans-serif; }
     .study .bible-text p:nth-child(2) {
       font: italic 600 0.85em "Titilium Web", sans-serif;
-      padding: 0.5em 5.5em 0;
+      margin: 0.5em 4em 0;
+      border-bottom: 0.15em solid #9799a5;
       background-color: rgba(213, 205, 205, 0.457);
       line-height: 1.5em;
       display: none;
       height: 0;
       overflow: scroll; }
   .study .comment {
-    font: italic 0.9em "Titilium Web", sans-serif; }
+    font: 300 0.95em "Titilium Web", sans-serif;
+    line-height: 1.5em; }
   .study h2 {
     font: 300 1.5em "Roboto", sans-serif;
     padding: 1em 0 0 1em; }
@@ -396,6 +406,10 @@ body {
 .arg {
   display: none;
   padding-left: 1.5em;
+  padding-bottom: 1em;
+  background-color: rgba(195, 184, 177, 0);
+  background-image: -webkit-linear-gradient(rgba(195, 184, 177, 0), rgba(195, 184, 177, 0.6));
+  background-image: linear-gradient(rgba(195, 184, 177, 0), rgba(195, 184, 177, 0.6));
   border-left: 0.2em solid #9799a5; }
 
 @media screen and (max-width: 640px) {
@@ -416,7 +430,7 @@ body {
     margin-top: 0.2em; }
 
   .content {
-    padding: 0 2em 3em; }
+    padding: 0 1.5em 3em; }
 
   .map, .video {
     width: 100%; }
@@ -503,27 +517,27 @@ body {
     height: 2.2em; }
 
   .bible h1 {
-    width: auto; }
+    width: 66%; }
 
   .thesis {
-    width: auto;
+    font-size: 16px;
     text-align: justify; }
 
   .study .bible-text p:first-child {
     padding: 0;
     margin-top: 2em; }
   .study .bible-text p:nth-child(2) {
-    padding: 0.5em 1.5em 0; }
+    margin: 0; }
   .study h2 {
     font-size: 1.3em;
     padding: 0;
-    margin: 1em 0 1em; }
+    margin: 1.5em 0 1.5em; }
   .study h3 {
     margin: 0.5em 0 0.5em; }
   .study .comment {
     padding: 0; }
   .study .arg {
-    padding: 0 0 0 1.5em; } }
+    padding: 0 0 1em 1.5em; } }
 @media screen and (max-height: 400px) {
   .slide ul {
     margin-top: 0; }
