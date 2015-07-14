@@ -9,7 +9,9 @@ $(function(){
 
     // slide bio
     $('.bio-button,.bio').on('click', function(){
-            $('.bio').slideToggle();
+            $('.bio').slideToggle(),
+            $('.bio-button').velocity("scroll",{duration: 700, offset: -90});
+
     });
     // slide bible text
     $('.h2').on('click', function(){
@@ -70,7 +72,6 @@ $(function(){
         iframeParent.insertBefore(wrap,iframe);
         wrap.appendChild(iframe);
     }
-
 
   // nav bar
 
