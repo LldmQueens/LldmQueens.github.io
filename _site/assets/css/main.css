@@ -192,6 +192,9 @@ body {
 .map {
   width: 100%; }
 
+.Ustream {
+  width: 45%; }
+
 #left-side {
   width: 60%;
   padding-right: 2em; }
