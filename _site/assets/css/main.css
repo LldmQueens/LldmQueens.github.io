@@ -459,7 +459,8 @@ body {
     width: 100%; }
 
   .Ustream {
-    width: 94%; }
+    width: 94%;
+    min-width: initial; }
 
   .title p {
     padding-top: 0.3em;
