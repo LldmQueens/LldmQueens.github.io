@@ -192,9 +192,6 @@ body {
 .map {
   width: 100%; }
 
-.Ustream {
-  width: 100%; }
-
 #left-side {
   width: 60%;
   padding-right: 2em; }
@@ -456,6 +453,9 @@ body {
 
   .map, .video {
     width: 100%; }
+
+  .Ustream {
+    width: 94%; }
 
   .title p {
     padding-top: 0.3em;
