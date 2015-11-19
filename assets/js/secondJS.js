@@ -3,6 +3,32 @@ $("#home")
 .delay(500)
 .velocity("transition.slideDownIn", 1200);
 
+//jPlayer
+
+$(document).ready(function(){
+     $("#jquery_jplayer_1").jPlayer({
+       ready: function () {
+         $(this).jPlayer("setMedia", {
+           title: "Lldm Queens NY",
+           m4a: "http://50.22.219.37:7852",
+           oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+         });
+       },
+       cssSelectorAncestor: "#jp_container_1",
+       swfPath: "/js",
+       supplied: "m4a, oga",
+       useStateClassSkin: true,
+       autoBlur: false,
+       smoothPlayBar: true,
+       keyEnabled: true,
+       remainingDuration: true,
+       toggleDuration: true
+     });
+   });
+
+//jplayer end
+
+
 $(function(){
 
     init();
@@ -36,6 +62,8 @@ $(function(){
             });
         }
     });
+
+
 
     // responsive video and map
 
