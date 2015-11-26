@@ -7,12 +7,10 @@ $(function(){
     Amplitude.init({
 	"songs": [
 		{
-			"name": "Rooms",
-			"artist": "Mia and Jonah",
-			"album": "Rooms For Adelaide",
-			"url": "http://a656.phobos.apple.com/us/r30/Music/2d/d1/52/mzm.oymgnziu.aac.p.m4a",
-			"live": false,
-			"cover_art_url": "images/roomsforadelaide.jpg"
+			"station_name": "La Luz del Mundo",
+			"location": "Queens,NY",
+			"url": "http://50.22.218.197:21244",
+			"live": true
 		}
 	],
 	"default_album_art": "images/no-cover.png"

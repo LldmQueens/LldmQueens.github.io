@@ -95,6 +95,7 @@ body {
   margin: 0; }
 
 .construction {
+  padding: 3em;
   font: 3em "Titilium Web", sans-serif; }
 
 .site-wrapper {
@@ -140,9 +141,14 @@ body {
   .banner img {
     width: 100%; }
 
+.radio {
+  width: 18em;
+  height: 4em;
+  background-color: rgba(182, 182, 201, 0.76); }
+
 .amplitude-play-pause.amplitude-paused, .amplitude-play-pause.amplitude-playing {
-  width: 3.2em;
-  height: 3.2em; }
+  width: 2.5em;
+  height: 2.5em; }
 
 .amplitude-play-pause.amplitude-paused {
   content: url(/assets/img/playBttn.svg/); }
