@@ -1,35 +1,26 @@
 
-$("#home")
-.delay(500)
-.velocity("transition.slideDownIn", 1200);
-
-//jPlayer
-
-$(document).ready(function(){
-     $("#jquery_jplayer_1").jPlayer({
-       ready: function () {
-         $(this).jPlayer("setMedia", {
-           title: "Lldm Queens NY",
-           m4a: "http://50.22.219.37:7852",
-           oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
-         });
-       },
-       cssSelectorAncestor: "#jp_container_1",
-       swfPath: "/js",
-       supplied: "m4a, oga",
-       useStateClassSkin: true,
-       autoBlur: false,
-       smoothPlayBar: true,
-       keyEnabled: true,
-       remainingDuration: true,
-       toggleDuration: true
-     });
-   });
-
-//jplayer end
-
-
 $(function(){
+
+
+    // amplitude - start
+
+    Amplitude.init({
+	"songs": [
+		{
+			"name": "Rooms",
+			"artist": "Mia and Jonah",
+			"album": "Rooms For Adelaide",
+			"url": "http://a656.phobos.apple.com/us/r30/Music/2d/d1/52/mzm.oymgnziu.aac.p.m4a",
+			"live": false,
+			"cover_art_url": "images/roomsforadelaide.jpg"
+		}
+	],
+	"default_album_art": "images/no-cover.png"
+    });
+
+
+    // amplitude - end
+
 
     init();
 
