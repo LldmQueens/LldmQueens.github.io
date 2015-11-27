@@ -9,7 +9,7 @@ $(function(){
 		{
 			"station_name": "La Luz del Mundo",
 			"location": "Queens,NY",
-			"url": "http://50.22.218.197:21244/",
+			"url": "http://50.22.218.197:21244/;stream/1",
 			"live": true
 		}
 	],
