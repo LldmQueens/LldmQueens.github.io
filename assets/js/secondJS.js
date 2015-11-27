@@ -13,6 +13,7 @@ $(function(){
 			"live": true
 		}
 	],
+    "volume": .40
     });
 
 
