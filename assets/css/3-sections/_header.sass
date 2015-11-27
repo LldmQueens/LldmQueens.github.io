@@ -10,10 +10,14 @@ html, body
 body
     background-image: url("/assets/img/church.png")
     background-repeat: no-repeat
-    background-position: 2em 4.5em
+    background-position: 50% 4.5em
     background-attachment: fixed
     margin: 0
     padding: 0
+
+    @media screen and (max-width:640px)
+        background-size: 100%
+        background-position: 50% 20em
 
 .horizontal
     +flex-horizontal
