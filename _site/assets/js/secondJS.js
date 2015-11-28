@@ -19,6 +19,16 @@ $(function(){
 
     // amplitude - end
 
+// check if radio is live
+
+    var radio = "http://50.22.218.197:21244/;stream/1";
+    $.ajax(radio,{
+        error: function(){
+        $('#statusOn').replaceWith("<p id=statusOff>Offline</p>");
+    },
+});
+
+ // radio check end
 
     init();
 
