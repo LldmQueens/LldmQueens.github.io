@@ -13,22 +13,22 @@ $(function(){
 			"live": true
 		}
 	],
-    "volume": .40
+    "volume": .45
     });
 
 
     // amplitude - end
 
 // check if radio is live
-    $.ajax({
-        url: "http://50.22.218.197:21244/;stream/1",
-        dataType:'jsonp',
-        statusCode: {
-            error: function(){
-            $('#statusOn').replaceWith("<p id=statusOff>Offline</p>");
-        }
-    },
-});
+//     $.ajax({
+//         url: "http://50.22.218.197:21244/;stream/1",
+//         dataType:'jsonp',
+//         statusCode: {
+//             error: function(){
+//             $('#statusOn').replaceWith("<p id=statusOff>Offline</p>");
+//         }
+//     },
+// });
 
  // radio check end
 
