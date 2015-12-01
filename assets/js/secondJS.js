@@ -30,6 +30,14 @@ $(function(){
 //     },
 // });
 
+    $.ajax({
+        url: "http://50.22.218.197:21244/;stream/1",
+        dataType:'jsonp',
+        error:function() {
+            $('#statusOn').replaceWith("<p id=statusOff>Offline</p>");
+        }
+    });
+
  // radio check end
 
     init();
