@@ -18,7 +18,7 @@ body {
   @media screen and (max-width: 640px) {
     body {
       background-size: 100%;
-      background-position: 50% 20em; } }
+      background-position: 50% 18.5em; } }
 
 .horizontal {
   display: -webkit-box;
@@ -91,11 +91,11 @@ body {
 
 .logo-wrap {
   width: 100%;
-  background-color: rgba(215, 216, 219, 0.85);
+  background-color: rgba(244, 240, 240, 0.78);
   height: 23em; }
   .logo-wrap p {
     margin-top: 10em;
-    color: white; }
+    color: #a9a3a3; }
 
 .logo-wrap img {
   height: 8em;
@@ -110,7 +110,7 @@ body {
   font: 3em "Titilium Web", sans-serif; }
 
 .site-wrapper {
-  background-color: rgba(215, 216, 219, 0.85);
+  background-color: rgba(244, 240, 240, 0.78);
   min-height: 70%;
   width: 100%; }
 
@@ -500,7 +500,11 @@ body {
     width: 100%; }
 
   .radio {
-    padding: 0 0; }
+    padding: 0;
+    height: 1.9em; }
+
+  .amplitude-play-pause.amplitude-paused, .amplitude-play-pause.amplitude-playing {
+    height: 1.5em; }
 
   .title p {
     padding-top: 0.3em;
