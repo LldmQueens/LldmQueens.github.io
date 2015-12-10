@@ -25,6 +25,18 @@
 
     <body>
 
+<!-- fb page -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1805034416390518";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+<!-- fb page end -->
+
+<!-- fb comments -->
         <div id="fb-root"></div>
         <script>(function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
@@ -33,7 +45,7 @@
           js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1805034416390518";
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-
+<!-- fb comments end -->
 
         <!-- change 'column' to 'horizontal' -->
         <section class='column logo-wrap'>
@@ -64,15 +76,31 @@
 <!-- radio -->
 
         <div class="radio horizontal">
-            <div class="radio-name">
-                <p>Radio: La Luz del Mundo</p>
-            </div>
-            <div class="amplitude-play-pause amplitude-paused" amplitude-main-play-pause="true">
+            <div class="radio-name horizontal">
+                <p>Radio: El Manto</p>
+                <div class="amplitude-play-pause amplitude-paused" amplitude-main-play-pause="true">
+                </div>
             </div>
         </div>
 
-        <div class="fb-comments" data-href="http://www.lldmny.org" data-width="290"
-        data-numposts="5" data-order-by="reverse_time" data-mobile="Auto-detected"></div>
+
+<!-- fb -->
+<div class="column">
+
+  <!-- <div class="fb-page" data-href="https://www.facebook.com/lldmqueensNY/?skip_nax_wizard=true"
+      data-tabs="timeline" data-width="400" data-height="300" data-small-header="false"
+      data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+      <div class="fb-xfbml-parse-ignore">
+        <blockquote cite="https://www.facebook.com/lldmqueensNY/?skip_nax_wizard=true">
+          <a href="https://www.facebook.com/lldmqueensNY/?skip_nax_wizard=true">La Luz del Mundo - Queens NY</a>
+        </blockquote>
+      </div>
+  </div> -->
+
+        <div class="fb-comments" data-href="http://www.lldmny.org" data-width="400"
+        data-numposts="3" data-order-by="reverse_time" data-mobile="Auto-detected"></div>
+</div>
+<!-- fb end -->
 
 <!-- radio status -->
 
